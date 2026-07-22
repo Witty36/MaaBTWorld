@@ -1,0 +1,171 @@
+{
+    "stop": {
+        "action": "StopTask"
+    },
+    "null": {},
+    "返回等待": {
+        "post_delay": 1000
+    },
+    "退出各类页面": {
+        "timeout": 2000,
+        "next": [
+            "返回上级页面",
+            "返回主页面",
+            "点击空白处关闭",
+            "退出获得奖励popop",
+            "退出培养成功popop",
+            "退出剧情进度popop",
+            "关闭公告"
+        ],
+        "on_error": ["null"]
+    },
+    "返回上级页面": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "popop/返回上级页面.png",
+                "roi": [0, 0, 144, 138],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": true
+            }
+        },
+        "next": ["返回等待"]
+    },
+    "返回主页面": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "popop/回到主页面.png",
+                "roi": [96, 13, 86, 92]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": true
+            }
+        },
+        "next": ["返回等待"]
+    },
+    "关闭活动弹窗": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "叉号.png",
+                "roi": [868, 36, 381, 246]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [5, 5, -10, -10]
+            }
+        },
+        "pre_delay": 1000,
+        "post_delay": 2000,
+        "next": []
+    },
+    "点击空白处关闭": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": ["点击空白处关闭", "点击空白"],
+                "replace": [["自", "白"]],
+                "roi": [514, 619, 256, 101]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [1168, 127, 10, 8]
+            }
+        },
+        "next": ["返回等待"]
+    },
+    "退出培养成功popop": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": ["培养成功"],
+                "roi": [496, 91, 278, 130]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [1168, 127, 10, 8]
+            }
+        },
+        "next": ["返回等待"]
+    },
+    "退出获得奖励popop": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": ["popop/获得奖励.png", "popop/获得奖励1.png"],
+                "roi": [458, 68, 356, 205],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [1168, 127, 10, 8]
+            }
+        },
+        "next": ["返回等待"]
+    },
+    "退出剧情进度popop": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": ["退出后不保存当前剧情进度", "剧情进度"],
+                "roi": [392, 229, 490, 179]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [749, 458, 38, 19]
+            }
+        },
+        "next": ["返回等待"]
+    },
+    "果实已成熟": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "果实已成熟",
+                "roi": [400, 200, 480, 200]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [752, 447, 32, 13]
+            }
+        },
+        "next": []
+    },
+    "关闭公告": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": ["系统", "活动", "资讯"],
+                "roi": [621, 36, 439, 119]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [1168, 127, 10, 8]
+            }
+        },
+        "next": ["返回等待"]
+    }
+}

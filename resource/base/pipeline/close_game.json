@@ -1,0 +1,14 @@
+{
+    "关闭世界之外": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "StopApp",
+            "param": {
+                "package": "com.netease.sjzw"
+            }
+        }
+    }
+}

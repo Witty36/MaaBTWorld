@@ -1,0 +1,202 @@
+{
+    "启动培养世界树": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "next": [
+            "准备收取世界树",
+            "[JumpBack]点击世界树",
+            "[JumpBack]点走未知生物",
+            "[JumpBack]前往主页面右半页",
+            "[JumpBack]退出各类页面"
+        ]
+    },
+    "准备收取世界树": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "成长信息",
+                "roi": [939, 98, 210, 100]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "timeout": 5000,
+        "next": ["世界树_获取全部"],
+        "on_error": ["开始培养世界树"]
+    },
+    "世界树_获取全部": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "获取全部",
+                "roi": [514, 532, 284, 154]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "开始培养世界树",
+            "[JumpBack]退出获得奖励popop",
+            "[JumpBack]点击空白处关闭"
+        ]
+    },
+    "开始培养世界树": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "世界树",
+                "roi": [125, 1, 224, 125]
+            }
+        },
+        "next": [
+            "[JumpBack]免费培养世界树",
+            "[JumpBack]退出获得奖励popop",
+            "[JumpBack]退出培养成功popop",
+            "[JumpBack]点击空白处关闭",
+            "[JumpBack]果实已成熟",
+            "已在快速培养",
+            "[JumpBack]切换到快速培养"
+        ]
+    },
+    "免费培养世界树": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": ["免费", "免费培养"],
+                "roi": [959, 617, 183, 74]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [1010, 589, 17, 13]
+            }
+        },
+        "timeout": 3000,
+        "next": ["培养已达上限_免费确定"],
+        "on_error": ["null"]
+    },
+    "培养已达上限_免费确定": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": ["花朵数量已达上限", "已达上限"],
+                "roi": [416, 146, 419, 151]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [749, 458, 38, 19]
+            }
+        },
+        "next": []
+    },
+    "切换到快速培养": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "worldtree/培养1次.png",
+                "roi": [932, 558, 127, 140]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [1131, 594, 9, 9]
+            }
+        },
+        "post_delay": 2000,
+        "next": []
+    },
+    "已在快速培养": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "快速",
+                "roi": [954, 531, 125, 116]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": true
+            }
+        },
+        "next": ["点击培养20次"]
+    },
+    "点击培养20次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "worldtree/培养10次.png",
+                "roi": [1150, 448, 128, 121]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [7, 7, -14, -14]
+            }
+        },
+        "repeat": 2,
+        "repeat_delay": 1000,
+        "next": ["确定培养"]
+    },
+    "确定培养": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "培养",
+                "roi": [970, 555, 137, 99]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": true
+            }
+        },
+        "next": ["培养成功", "培养已达上限_取消培养"]
+    },
+    "培养成功": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "培养成功",
+                "roi": [400, 50, 500, 170]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "next": []
+    },
+    "培养已达上限_取消培养": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": ["花朵数量已达上限", "已达上限"],
+                "roi": [416, 146, 419, 151]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [500, 456, 39, 20]
+            }
+        },
+        "next": []
+    }
+}

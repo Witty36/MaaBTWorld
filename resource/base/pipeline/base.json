@@ -1,0 +1,152 @@
+{
+    "前往主页面右半页": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "前往右半页.png",
+                "roi": [1131, 267, 149, 149]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": true
+            }
+        },
+        "next": ["已在主页面右半页"]
+    },
+    "前往主页面左半页": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "前往左半页.png",
+                "roi": [0, 268, 101, 142]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": true
+            }
+        },
+        "next": ["已在主页面左半页"]
+    },
+    "已在主页面右半页": {
+        "recognition": {
+            "type": "Or",
+            "param": {
+                "any_of": [
+                    {
+                        "recognition": {
+                            "type": "OCR",
+                            "param": {
+                                "expected": ["无限副本"],
+                                "roi": [992, 48, 208, 133]
+                            }
+                        }
+                    },
+                    {
+                        "recognition": {
+                            "type": "OCR",
+                            "param": {
+                                "expected": ["世界任务站", "任务站"],
+                                "roi": [128, 328, 206, 112]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "已在主页面左半页": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "日常内容",
+                "replace": [["丙", "内"]],
+                "roi": [476, 100, 330, 209]
+            }
+        }
+    },
+    "点击世界树": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "世界树",
+                "roi": [118, 135, 158, 126]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": true
+            }
+        },
+        "timeout": 5000,
+        "next": ["已在世界树页面"],
+        "on_error": ["null"]
+    },
+    "已在世界树页面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "世界树",
+                "roi": [125, 1, 224, 125]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "next": []
+    },
+    "点击崩坍之界": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "崩坍之界",
+                "roi": [250, 500, 200, 100]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": true
+            }
+        },
+        "post_delay": 2000,
+        "next": ["已在崩坍之界页面"],
+        "on_error": ["null"]
+    },
+    "已在崩坍之界页面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "崩坍之界",
+                "roi": [138, 6, 240, 133]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "next": []
+    },
+
+    "点走未知生物": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "未知生物回窝.png",
+                "roi": [686, 441, 149, 146]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": true
+            }
+        },
+        "next": ["返回等待"]
+    }
+}

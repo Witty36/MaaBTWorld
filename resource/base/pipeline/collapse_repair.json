@@ -1,0 +1,132 @@
+{
+    "启动崩坍直接修补": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "next": [
+            "崩坍之界修补准备",
+            "[JumpBack]点击崩坍之界",
+            "[JumpBack]前往主页面右半页",
+            "[JumpBack]退出各类页面"
+        ]
+    },
+    "崩坍之界修补准备": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "崩坍之界",
+                "roi": [138, 6, 240, 133]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": true
+            }
+        },
+        "post_delay": 2000,
+        "next": ["点击修补裂隙"]
+    },
+    "点击修补裂隙": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": ["修补裂隙", "修补"],
+                "roi": [894, 539, 381, 161]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": true
+            }
+        },
+        "post_delay": 2000,
+        "next": ["点击快速修补", "[JumpBack]关闭活动弹窗"]
+    },
+    "点击快速修补": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "快速修补",
+                "roi": [730, 580, 230, 100]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": true
+            }
+        },
+        "post_delay": 2000,
+        "timeout": 6000,
+        "next": ["快速修补次数最大"],
+        "on_error": ["挑战次数不足"]
+    },
+    "挑战次数不足": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": ["0/10"],
+                "roi": [1005, 567, 70, 48]
+            }
+        },
+        "focus": "崩坍挑战次数不足，结束任务"
+    },
+    "快速修补次数最大": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "次数最大.png",
+                "roi": [765, 428, 80, 82]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [5, 4, -10, -8]
+            }
+        },
+        "post_delay": 2000,
+        "next": ["确定快速修补", "[JumpBack]关闭活动弹窗"]
+    },
+    "确定快速修补": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "确定",
+                "roi": [680, 550, 150, 80]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": true
+            }
+        },
+        "post_delay": 2000,
+        "next": ["关闭修补记录", "[JumpBack]关闭活动弹窗"]
+    },
+    "关闭修补记录": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "popop/退出修补记录.png",
+                "roi": [209, 51, 169, 295]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [1075, 98, 11, 11]
+            }
+        },
+        "post_delay": 1000,
+        "next": []
+    }
+}

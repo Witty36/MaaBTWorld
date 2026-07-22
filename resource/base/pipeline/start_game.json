@@ -1,0 +1,204 @@
+{
+    "启动世界之外": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "next": ["切换账号启动", "世界之外官服", "世界之外台服"]
+    },
+    "世界之外官服": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "StartApp",
+            "param": {
+                "package": "com.netease.sjzw"
+            }
+        },
+        "next": [
+            "更新已完成,重新登录",
+            "[JumpBack]下载资源中",
+            "[JumpBack]连接资源服务器",
+            "[JumpBack]关闭公告",
+            "[JumpBack]关闭系统更新公告",
+            "点击登录",
+            "点击开始旅程",
+            "[JumpBack]sub_启动世外官服",
+            "[JumpBack]启动再等等"
+        ]
+    },
+    "世界之外台服": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "StartApp",
+            "param": {
+                "package": "com.netease.sjzw"
+            }
+        },
+        "next": [
+            "更新已完成,重新登录",
+            "[JumpBack]下载资源中",
+            "[JumpBack]连接资源服务器",
+            "[JumpBack]关闭公告",
+            "[JumpBack]关闭系统更新公告",
+            "点击登录",
+            "点击开始旅程",
+            "[JumpBack]sub_启动世外台服"
+        ]
+    },
+    "更新已完成,重新登录": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": ["更新已完成", "重新登录"],
+                "roi": [372, 249, 512, 165]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [631, 458, 21, 11]
+            }
+        },
+        "next": ["启动世界之外"]
+    },
+    "下载资源中": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": ["下载资源中", "下载资源"],
+                "roi": [330, 584, 314, 121]
+            }
+        },
+        "post_delay": 5000,
+        "next": []
+    },
+    "连接资源服务器": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": ["连接资源服务器", "连接资源"],
+                "roi": [467, 591, 368, 114]
+            }
+        },
+        "post_delay": 5000,
+        "next": []
+    },
+    "关闭系统更新公告": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "叉号.png",
+                "roi": [1096, 59, 140, 139]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [5, 5, -10, -10]
+            }
+        },
+        "pre_delay": 1000,
+        "post_delay": 2000,
+        "next": []
+    },
+    "点击开始旅程": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "开始旅程",
+                "roi": [0, 400, 1280, 320]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": true
+            }
+        },
+        "next": [
+            "[JumpBack]关闭公告",
+            "[JumpBack]关闭活动弹窗",
+            "[JumpBack]返回主页面",
+            "[JumpBack]返回上级页面",
+            "[JumpBack]退出获得奖励popop",
+            "[JumpBack]退出剧情进度popop",
+            "[JumpBack]点击空白处关闭",
+            "已在主页面"
+        ],
+        "on_error": ["点击开始旅程"]
+    },
+    "已在主页面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "日常内容",
+                "replace": [["丙", "内"]],
+                "roi": [476, 100, 330, 209]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "timeout": 15000,
+        "next": [
+            "[JumpBack]关闭公告",
+            "[JumpBack]关闭活动弹窗",
+            "[JumpBack]返回主页面",
+            "[JumpBack]返回上级页面",
+            "[JumpBack]退出获得奖励popop",
+            "[JumpBack]退出剧情进度popop",
+            "[JumpBack]点击空白处关闭",
+            "start_已在主页面"
+        ]
+    },
+    "start_已在主页面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "日常内容",
+                "replace": [["丙", "内"]],
+                "roi": [476, 100, 330, 209]
+            }
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        }
+    },
+    "sub_启动世外官服": {
+        "enabled": false,
+        "action": {
+            "type": "StartApp",
+            "param": {
+                "package": "com.netease.sjzw"
+            }
+        },
+        "max_hit": 5,
+        "next": ["启动再等等"]
+    },
+    "sub_启动世外台服": {
+        "enabled": false,
+        "action": {
+            "type": "StartApp",
+            "param": {
+                "package": "com.netease.sjzw"
+            }
+        },
+        "max_hit": 5,
+        "next": ["启动再等等"]
+    },
+    "启动再等等": {
+        "post_delay": 5000
+    }
+}

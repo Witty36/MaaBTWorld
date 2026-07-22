@@ -1,0 +1,232 @@
+{
+    "启动切换账号": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "DoNothing",
+            "param": {}
+        },
+        "next": [
+            "主页面切换账号",
+            "[JumpBack]前往主页面左半页",
+            "[JumpBack]退出各类页面"
+        ]
+    },
+    "主页面切换账号": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "login/点击个人.png",
+                "roi": [112, 606, 114, 104]
+            }
+        },
+        "next": ["点击个人"]
+    },
+    "点击个人": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "login/点击个人.png",
+                "roi": [112, 606, 114, 104]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [181, 626, 8, 10]
+            }
+        },
+        "next": ["点击设置图标"]
+    },
+    "点击设置图标": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "点击设置.png",
+                "roi": [112, 606, 114, 104]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [5, 5, -10, -10]
+            }
+        },
+        "next": ["点击用户中心"]
+    },
+    "点击用户中心": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "用户中心",
+                "roi": [1130, 242, 139, 88]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [1196, 258, 9, 8]
+            }
+        },
+        "next": ["点击切换账号"]
+    },
+    "点击切换账号": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "切换账号",
+                "roi": [871, 167, 170, 121]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": true
+            }
+        },
+        "post_delay": 4000,
+        "next": ["点击账号下拉菜单"]
+    },
+    "点击账号下拉菜单": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "login/点击账号下拉菜单.png",
+                "roi": [777, 274, 125, 120]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": ["选择登录账号", "[JumpBack]向下找找账号"]
+    },
+    "选择登录账号": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "89",
+                "roi": [461, 276, 104, 311]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": true
+            }
+        },
+        "post_delay": 3000,
+        "next": ["确认已切好账号", "点击账号下拉菜单"]
+    },
+    "向下找找账号": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": ["网易游戏", "网易"],
+                "roi": [565, 181, 194, 85]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [717, 513, 4, 4],
+                "end": [720, 433, 3, 3],
+                "duration": 1000,
+                "end_hold": 500
+            }
+        },
+        "post_delay": 1500,
+        "next": []
+    },
+    "确认已切好账号": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "89",
+                "roi": [454, 270, 121, 107]
+            }
+        },
+        "next": ["点击登录", "选择登录账号"]
+    },
+    "点击登录": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "登录",
+                "roi": [545, 389, 196, 86]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": true
+            }
+        },
+        "post_delay": 3000,
+        "next": ["点击开始旅程", "点击登录"]
+    },
+    "切换账号启动": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "StartApp",
+            "param": {
+                "package": "com.netease.sjzw"
+            }
+        },
+        "enabled": false,
+        "post_delay": 4000,
+        "next": [
+            "主页面切换账号",
+            "更新已完成,重新登录_切换账号",
+            "[JumpBack]下载资源中",
+            "[JumpBack]连接资源服务器",
+            "[JumpBack]关闭公告",
+            "[JumpBack]关闭系统更新公告",
+            "点击登录用户中心",
+            "点击账号下拉菜单",
+            "[JumpBack]sub_启动世外官服",
+            "[JumpBack]sub_启动世外台服",
+            "[JumpBack]返回上级页面",
+            "[JumpBack]启动再等等"
+        ],
+        "focus": "启动游戏并使用指定账号登录"
+    },
+    "点击登录用户中心": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "用户中心",
+                "roi": [1151, 53, 118, 83]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [1208, 59, 13, 10]
+            }
+        },
+        "post_delay": 4000,
+        "next": ["点击账号下拉菜单"]
+    },
+    "更新已完成,重新登录_切换账号": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": ["更新已完成", "重新登录"],
+                "roi": [372, 249, 512, 165]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [631, 458, 21, 11]
+            }
+        },
+        "next": ["切换账号启动"]
+    }
+}
