@@ -1,18 +1,8 @@
 import * as multilineArrays from "prettier-plugin-multiline-arrays";
-import * as maafwSort from "@nekosu/prettier-plugin-maafw-sort";
 
 export default {
-    plugins: [
-        maafwSort.patchPlugin(multilineArrays),
-    ],
+    plugins: [multilineArrays],
     multilineArraysWrapThreshold: 1,
-    maafwPipelinePatterns: [
-        "/pipeline/.*\\.jsonc?",
-    ],
-    maafwInterfacePatterns: [
-        "/interface\\.jsonc?",
-        "/tasks/.*\\.jsonc?",
-    ],
     tabWidth: 4,
     printWidth: 120,
     useTabs: false,
@@ -20,6 +10,18 @@ export default {
     bracketSpacing: false,
     endOfLine: "lf",
     overrides: [
+        {
+            files: [
+                "**/pipeline/**",
+                "tasks/**",
+                "interface.json",
+            ],
+            options: {
+                printWidth: 80,
+                endOfLine: "auto",
+                multilineArraysWrapThreshold: -1,
+            },
+        },
         {
             files: [
                 "**/*.yml",
@@ -31,15 +33,11 @@ export default {
             },
         },
         {
-            files: [
-                "*.json",
-                "*.jsonc",
-            ],
+            files: ["*.json"],
             options: {
                 parser: "json",
                 useTabs: false,
                 bracketSameLine: false,
-                trailingComma: "none",
             },
         },
         {
@@ -53,7 +51,6 @@ export default {
                 trailingComma: "all",
                 bracketSpacing: true,
                 singleQuote: true,
-                multilineArraysWrapThreshold: -1,
             },
         },
     ],
