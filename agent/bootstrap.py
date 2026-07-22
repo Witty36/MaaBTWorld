@@ -290,11 +290,11 @@ def try_lock_file(handle: BinaryIO) -> bool:
         if sys.platform.startswith("win"):
             import msvcrt
 
-            msvcrt.locking(handle.fileno(), msvcrt.LK_NBLCK, 1)
+            msvcrt.locking(handle.fileno(), msvcrt.LK_NBLCK, 1)  # pyright: ignore[reportAttributeAccessIssue]
         else:
             import fcntl
 
-            fcntl.flock(handle.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+            fcntl.flock(handle.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)  # pyright: ignore[reportAttributeAccessIssue]
     except OSError as error:
         if error.errno in (errno.EACCES, errno.EAGAIN):
             return False
@@ -307,11 +307,11 @@ def unlock_file(handle: BinaryIO) -> None:
     if sys.platform.startswith("win"):
         import msvcrt
 
-        msvcrt.locking(handle.fileno(), msvcrt.LK_UNLCK, 1)
+        msvcrt.locking(handle.fileno(), msvcrt.LK_UNLCK, 1)  # pyright: ignore[reportAttributeAccessIssue]
     else:
         import fcntl
 
-        fcntl.flock(handle.fileno(), fcntl.LOCK_UN)
+        fcntl.flock(handle.fileno(), fcntl.LOCK_UN)  # pyright: ignore[reportAttributeAccessIssue]
 
 
 def write_requirements_marker(project_root: Path, digest: str) -> None:

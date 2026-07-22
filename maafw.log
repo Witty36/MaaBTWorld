@@ -1,0 +1,1008 @@
+[2026-07-22 16:22:03.619][DBG][Px26616][Tx48926][Logger] ----------------------------- 
+[2026-07-22 16:22:03.619][DBG][Px26616][Tx48926][Logger] MAA Process Start 
+[2026-07-22 16:22:03.619][DBG][Px26616][Tx48926][Logger] Version v5.12.2 
+[2026-07-22 16:22:03.619][DBG][Px26616][Tx48926][Logger] Built at Jul 19 2026 14:59:13 
+[2026-07-22 16:22:03.619][DBG][Px26616][Tx48926][Logger] Windows x64 
+[2026-07-22 16:22:03.619][DBG][Px26616][Tx48926][Logger] Working E:/game/maa/MaaBTWorld 
+[2026-07-22 16:22:03.619][DBG][Px26616][Tx48926][Logger] Logging E:/game/maa/MaaBTWorld/maafw.log 
+[2026-07-22 16:22:03.619][DBG][Px26616][Tx48926][Logger] ----------------------------- 
+[2026-07-22 16:22:03.619][TRC][Px26616][Tx48926][OptionMgr.cpp][L35][MaaNS::GlobalNS::OptionMgr::set_log_dir] | leave, 0ms 
+[2026-07-22 16:22:03.619][TRC][Px26616][Tx48926][OptionMgr.cpp][L10][MaaNS::GlobalNS::OptionMgr::set_option] | leave, 0ms 
+[2026-07-22 16:22:03.619][TRC][Px26616][Tx48926][MaaFramework.cpp][L371][MaaGlobalSetOption] | leave, 1ms 
+[2026-07-22 16:22:03.668][DBG][Px26616][Tx48926][MaaFramework.cpp][L333][MaaResourceCreate] | enter 
+[2026-07-22 16:22:03.668][DBG][Px26616][Tx48926][OCRResMgr.cpp][L15][MaaNS::ResourceNS::OCRResMgr::OCRResMgr] | enter 
+[2026-07-22 16:22:03.668][TRC][Px26616][Tx48926][OCRResMgr.cpp][L15][MaaNS::ResourceNS::OCRResMgr::OCRResMgr] | leave, 0ms 
+[2026-07-22 16:22:03.702][DBG][Px26616][Tx48926][ResourceMgr.cpp][L18][MaaNS::ResourceNS::ResourceMgr::ResourceMgr] | enter 
+[2026-07-22 16:22:03.702][INF][Px26616][Tx48926][ResourceMgr.cpp][L21][MaaNS::ResourceNS::ResourceMgr::ResourceMgr] [plugin_mgr.get_names()=["//?/C:/Users/asus/.maa-tools/install/latest/node_modules/@maaxyz/maa-node-win32-x64/plugins/MaaPluginDemo.dll"]] 
+[2026-07-22 16:22:03.702][INF][Px26616][Tx48926][Utils/EventDispatcher.hpp][L37][MaaNS::EventDispatcher::add_sink] [callback=true] [trans_arg=true] 
+[2026-07-22 16:22:03.702][TRC][Px26616][Tx48926][ResourceMgr.cpp][L18][MaaNS::ResourceNS::ResourceMgr::ResourceMgr] | leave, 0ms 
+[2026-07-22 16:22:03.702][TRC][Px26616][Tx48926][MaaFramework.cpp][L333][MaaResourceCreate] | leave, 33ms 
+[2026-07-22 16:22:03.702][DBG][Px26616][Tx48926][MaaResource.cpp][L124][MaaResourcePostBundle] [res=true] [path=E:\game\maa\MaaBTWorld\resource\base] | enter 
+[2026-07-22 16:22:03.703][INF][Px26616][Tx48926][ResourceMgr.cpp][L75][MaaNS::ResourceNS::ResourceMgr::post_path] [static_cast<int>(type)=0] [path=E:/game/maa/MaaBTWorld/resource/base] 
+[2026-07-22 16:22:03.703][TRC][Px26616][Tx48926][MaaResource.cpp][L124][MaaResourcePostBundle] | leave, 0ms 
+[2026-07-22 16:22:03.703][DBG][Px26616][Tx55939][ResourceMgr.cpp][L595][MaaNS::ResourceNS::ResourceMgr::run_load] [id=100000001] [static_cast<int>(item.type)=0] [item.path=E:/game/maa/MaaBTWorld/resource/base] | enter 
+[2026-07-22 16:22:03.703][INF][Px26616][Tx55939][Utils/EventDispatcher.hpp][L65][MaaNS::EventDispatcher::notify] !!!OnEventNotify!!! [handle=true] [msg=Resource.Loading.Starting] [details={"hash":"","path":"E:/game/maa/MaaBTWorld/resource/base","res_id":100000001,"type":"Bundle"}] 
+[2026-07-22 16:22:03.703][INF][Px26616][Tx55939][ResourceMgr.cpp][L372][MaaNS::ResourceNS::ResourceMgr::available_providers] [all_providers_vec=["DmlExecutionProvider","CPUExecutionProvider"]] 
+[2026-07-22 16:22:03.703][INF][Px26616][Tx55939][ResourceMgr.cpp][L400][MaaNS::ResourceNS::ResourceMgr::available_providers] [s_provider_cache=[2,1]] 
+[2026-07-22 16:22:03.703][TRC][Px26616][Tx55939][GpuOptionWin32.cpp][L137][MaaNS::perfer_gpu] 
+[2026-07-22 16:22:03.712][INF][Px26616][Tx55939][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=0] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:22:03.712][WRN][Px26616][Tx55939][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=0] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:22:03.712][INF][Px26616][Tx55939][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=1] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:22:03.712][WRN][Px26616][Tx55939][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=1] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:22:03.712][INF][Px26616][Tx55939][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=2] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:22:03.712][WRN][Px26616][Tx55939][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=2] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:22:03.713][INF][Px26616][Tx55939][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=3] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:22:03.713][WRN][Px26616][Tx55939][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=3] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:22:03.713][INF][Px26616][Tx55939][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=4] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:22:03.713][WRN][Px26616][Tx55939][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=4] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:22:03.713][INF][Px26616][Tx55939][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=5] [adapter_desc=Microsoft Basic Render Driver] 
+[2026-07-22 16:22:03.713][WRN][Px26616][Tx55939][GpuOptionWin32.cpp][L191][MaaNS::perfer_gpu] software adapter, skip [adapter_index=5] [adapter_desc=Microsoft Basic Render Driver] 
+[2026-07-22 16:22:03.713][DBG][Px26616][Tx55939][GpuOptionWin32.cpp][L173][MaaNS::perfer_gpu] EnumAdapters1 DXGI_ERROR_NOT_FOUND [adapter_index=6] 
+[2026-07-22 16:22:03.713][INF][Px26616][Tx55939][GpuOptionWin32.cpp][L236][MaaNS::perfer_gpu] no available gpu found 
+[2026-07-22 16:22:03.713][WRN][Px26616][Tx55939][ResourceMgr.cpp][L514][MaaNS::ResourceNS::ResourceMgr::use_directml] No suitable inference GPU for DirectML 
+[2026-07-22 16:22:03.713][INF][Px26616][Tx55939][ONNXResMgr.cpp][L45][MaaNS::ResourceNS::ONNXResMgr::use_cpu] 
+[2026-07-22 16:22:03.713][INF][Px26616][Tx55939][OCRResMgr.cpp][L23][MaaNS::ResourceNS::OCRResMgr::use_cpu] 
+[2026-07-22 16:22:03.713][DBG][Px26616][Tx55939][ResourceMgr.cpp][L636][MaaNS::ResourceNS::ResourceMgr::load_bundle] [path=E:/game/maa/MaaBTWorld/resource/base] | enter 
+[2026-07-22 16:22:03.713][TRC][Px26616][Tx55939][GpuOptionWin32.cpp][L137][MaaNS::perfer_gpu] 
+[2026-07-22 16:22:03.714][INF][Px26616][Tx55939][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=0] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:22:03.714][WRN][Px26616][Tx55939][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=0] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:22:03.714][INF][Px26616][Tx55939][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=1] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:22:03.714][WRN][Px26616][Tx55939][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=1] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:22:03.714][INF][Px26616][Tx55939][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=2] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:22:03.714][WRN][Px26616][Tx55939][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=2] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:22:03.715][INF][Px26616][Tx55939][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=3] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:22:03.715][WRN][Px26616][Tx55939][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=3] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:22:03.715][INF][Px26616][Tx55939][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=4] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:22:03.715][WRN][Px26616][Tx55939][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=4] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:22:03.715][INF][Px26616][Tx55939][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=5] [adapter_desc=Microsoft Basic Render Driver] 
+[2026-07-22 16:22:03.715][WRN][Px26616][Tx55939][GpuOptionWin32.cpp][L191][MaaNS::perfer_gpu] software adapter, skip [adapter_index=5] [adapter_desc=Microsoft Basic Render Driver] 
+[2026-07-22 16:22:03.715][DBG][Px26616][Tx55939][GpuOptionWin32.cpp][L173][MaaNS::perfer_gpu] EnumAdapters1 DXGI_ERROR_NOT_FOUND [adapter_index=6] 
+[2026-07-22 16:22:03.715][INF][Px26616][Tx55939][GpuOptionWin32.cpp][L236][MaaNS::perfer_gpu] no available gpu found 
+[2026-07-22 16:22:03.715][WRN][Px26616][Tx55939][ResourceMgr.cpp][L514][MaaNS::ResourceNS::ResourceMgr::use_directml] No suitable inference GPU for DirectML 
+[2026-07-22 16:22:03.715][INF][Px26616][Tx55939][ONNXResMgr.cpp][L45][MaaNS::ResourceNS::ONNXResMgr::use_cpu] 
+[2026-07-22 16:22:03.715][INF][Px26616][Tx55939][OCRResMgr.cpp][L23][MaaNS::ResourceNS::OCRResMgr::use_cpu] 
+[2026-07-22 16:22:03.715][DBG][Px26616][Tx55939][DefaultPipelineMgr.cpp][L14][MaaNS::ResourceNS::DefaultPipelineMgr::load] [path=E:/game/maa/MaaBTWorld/resource/base/default_pipeline.json] | enter 
+[2026-07-22 16:22:03.716][INF][Px26616][Tx55939][DefaultPipelineMgr.cpp][L22][MaaNS::ResourceNS::DefaultPipelineMgr::load] [json={"Click":{"action":"Click","target":true},"Default":{"post_delay":200,"pre_delay":200,"rate_limit":1000,"timeout":20000},"LongPress":{"action":"LongPress","duration":1000,"target":true},"OCR":{"order_by":"Horizontal","recognition":"OCR","replace":[],"threshold":0.3},"Swipe":{"action":"Swipe","duration":200},"TemplateMatch":{"method":5,"recognition":"TemplateMatch","threshold":0.7}}] 
+[2026-07-22 16:22:03.716][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=] 
+[2026-07-22 16:22:03.716][TRC][Px26616][Tx55939][DefaultPipelineMgr.cpp][L14][MaaNS::ResourceNS::DefaultPipelineMgr::load] | leave, 1ms 
+[2026-07-22 16:22:03.716][DBG][Px26616][Tx55939][PipelineResMgr.cpp][L15][MaaNS::ResourceNS::PipelineResMgr::load] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline] | enter 
+[2026-07-22 16:22:03.716][DBG][Px26616][Tx55939][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/base.json] | enter 
+[2026-07-22 16:22:03.716][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=前往主页面右半页] 
+[2026-07-22 16:22:03.716][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=前往主页面左半页] 
+[2026-07-22 16:22:03.716][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=已在世界树页面] 
+[2026-07-22 16:22:03.716][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=已在主页面右半页] 
+[2026-07-22 16:22:03.716][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=已在主页面左半页] 
+[2026-07-22 16:22:03.716][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=已在崩坍之界页面] 
+[2026-07-22 16:22:03.716][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击世界树] 
+[2026-07-22 16:22:03.716][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击崩坍之界] 
+[2026-07-22 16:22:03.716][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点走未知生物] 
+[2026-07-22 16:22:03.716][TRC][Px26616][Tx55939][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:22:03.716][DBG][Px26616][Tx55939][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/close_game.json] | enter 
+[2026-07-22 16:22:03.717][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=关闭世界之外] 
+[2026-07-22 16:22:03.717][TRC][Px26616][Tx55939][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:22:03.717][DBG][Px26616][Tx55939][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/collapse_repair.json] | enter 
+[2026-07-22 16:22:03.717][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=关闭修补记录] 
+[2026-07-22 16:22:03.718][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=启动崩坍直接修补] 
+[2026-07-22 16:22:03.718][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=崩坍之界修补准备] 
+[2026-07-22 16:22:03.718][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=快速修补次数最大] 
+[2026-07-22 16:22:03.718][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=挑战次数不足] 
+[2026-07-22 16:22:03.718][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击修补裂隙] 
+[2026-07-22 16:22:03.718][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击快速修补] 
+[2026-07-22 16:22:03.718][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=确定快速修补] 
+[2026-07-22 16:22:03.718][TRC][Px26616][Tx55939][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:22:03.718][DBG][Px26616][Tx55939][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/popop.json] | enter 
+[2026-07-22 16:22:03.718][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=null] 
+[2026-07-22 16:22:03.718][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=stop] 
+[2026-07-22 16:22:03.718][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=关闭公告] 
+[2026-07-22 16:22:03.718][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=关闭活动弹窗] 
+[2026-07-22 16:22:03.718][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=果实已成熟] 
+[2026-07-22 16:22:03.718][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击空白处关闭] 
+[2026-07-22 16:22:03.718][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=返回上级页面] 
+[2026-07-22 16:22:03.718][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=返回主页面] 
+[2026-07-22 16:22:03.718][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=返回等待] 
+[2026-07-22 16:22:03.718][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=退出剧情进度popop] 
+[2026-07-22 16:22:03.718][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=退出各类页面] 
+[2026-07-22 16:22:03.718][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=退出培养成功popop] 
+[2026-07-22 16:22:03.718][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=退出获得奖励popop] 
+[2026-07-22 16:22:03.718][TRC][Px26616][Tx55939][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:22:03.718][DBG][Px26616][Tx55939][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/start_game.json] | enter 
+[2026-07-22 16:22:03.718][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=start_已在主页面] 
+[2026-07-22 16:22:03.718][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=sub_启动世外台服] 
+[2026-07-22 16:22:03.718][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=sub_启动世外官服] 
+[2026-07-22 16:22:03.718][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=下载资源中] 
+[2026-07-22 16:22:03.718][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=世界之外台服] 
+[2026-07-22 16:22:03.719][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=世界之外官服] 
+[2026-07-22 16:22:03.719][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=关闭系统更新公告] 
+[2026-07-22 16:22:03.719][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=启动世界之外] 
+[2026-07-22 16:22:03.719][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=启动再等等] 
+[2026-07-22 16:22:03.719][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=已在主页面] 
+[2026-07-22 16:22:03.719][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=更新已完成,重新登录] 
+[2026-07-22 16:22:03.719][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击开始旅程] 
+[2026-07-22 16:22:03.719][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=连接资源服务器] 
+[2026-07-22 16:22:03.719][TRC][Px26616][Tx55939][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:22:03.719][DBG][Px26616][Tx55939][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/switch_account.json] | enter 
+[2026-07-22 16:22:03.719][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=主页面切换账号] 
+[2026-07-22 16:22:03.719][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=切换账号启动] 
+[2026-07-22 16:22:03.719][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=向下找找账号] 
+[2026-07-22 16:22:03.719][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=启动切换账号] 
+[2026-07-22 16:22:03.719][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=更新已完成,重新登录_切换账号] 
+[2026-07-22 16:22:03.719][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击个人] 
+[2026-07-22 16:22:03.719][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击切换账号] 
+[2026-07-22 16:22:03.719][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击用户中心] 
+[2026-07-22 16:22:03.719][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击登录] 
+[2026-07-22 16:22:03.719][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击登录用户中心] 
+[2026-07-22 16:22:03.719][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击设置图标] 
+[2026-07-22 16:22:03.719][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击账号下拉菜单] 
+[2026-07-22 16:22:03.719][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=确认已切好账号] 
+[2026-07-22 16:22:03.719][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=选择登录账号] 
+[2026-07-22 16:22:03.719][TRC][Px26616][Tx55939][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:22:03.719][DBG][Px26616][Tx55939][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/tree.json] | enter 
+[2026-07-22 16:22:03.719][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=世界树_获取全部] 
+[2026-07-22 16:22:03.719][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=免费培养世界树] 
+[2026-07-22 16:22:03.719][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=准备收取世界树] 
+[2026-07-22 16:22:03.719][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=切换到快速培养] 
+[2026-07-22 16:22:03.719][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=启动培养世界树] 
+[2026-07-22 16:22:03.720][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=培养已达上限_免费确定] 
+[2026-07-22 16:22:03.720][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=培养已达上限_取消培养] 
+[2026-07-22 16:22:03.720][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=培养成功] 
+[2026-07-22 16:22:03.720][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=已在快速培养] 
+[2026-07-22 16:22:03.720][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=开始培养世界树] 
+[2026-07-22 16:22:03.720][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击培养20次] 
+[2026-07-22 16:22:03.720][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=确定培养] 
+[2026-07-22 16:22:03.720][TRC][Px26616][Tx55939][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:22:03.720][DBG][Px26616][Tx55939][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/tutorial.json] | enter 
+[2026-07-22 16:22:03.720][DBG][Px26616][Tx55939][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=Tutorial.Start] 
+[2026-07-22 16:22:03.720][TRC][Px26616][Tx55939][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:22:03.720][TRC][Px26616][Tx55939][PipelineResMgr.cpp][L15][MaaNS::ResourceNS::PipelineResMgr::load] | leave, 4ms 
+[2026-07-22 16:22:03.720][DBG][Px26616][Tx55939][OCRResMgr.cpp][L62][MaaNS::ResourceNS::OCRResMgr::lazy_load] [path=E:/game/maa/MaaBTWorld/resource/base/model/ocr] | enter 
+[2026-07-22 16:22:03.720][TRC][Px26616][Tx55939][OCRResMgr.cpp][L62][MaaNS::ResourceNS::OCRResMgr::lazy_load] | leave, 0ms 
+[2026-07-22 16:22:03.720][DBG][Px26616][Tx55939][TemplateResMgr.cpp][L10][MaaNS::ResourceNS::TemplateResMgr::lazy_load] [path=E:/game/maa/MaaBTWorld/resource/base/image] | enter 
+[2026-07-22 16:22:03.720][TRC][Px26616][Tx55939][TemplateResMgr.cpp][L10][MaaNS::ResourceNS::TemplateResMgr::lazy_load] | leave, 0ms 
+[2026-07-22 16:22:03.720][INF][Px26616][Tx55939][ResourceMgr.cpp][L681][MaaNS::ResourceNS::ResourceMgr::load_bundle] [path=E:/game/maa/MaaBTWorld/resource/base] [ret=true] [to_load=true] 
+[2026-07-22 16:22:03.720][TRC][Px26616][Tx55939][ResourceMgr.cpp][L636][MaaNS::ResourceNS::ResourceMgr::load_bundle] | leave, 7ms 
+[2026-07-22 16:22:03.720][INF][Px26616][Tx55939][ResourceMgr.cpp][L217][MaaNS::ResourceNS::ResourceMgr::calc_hash] [hash_cache_=ae792d7d42182808] 
+[2026-07-22 16:22:03.720][INF][Px26616][Tx55939][Utils/EventDispatcher.hpp][L65][MaaNS::EventDispatcher::notify] !!!OnEventNotify!!! [handle=true] [msg=Resource.Loading.Succeeded] [details={"hash":"ae792d7d42182808","path":"E:/game/maa/MaaBTWorld/resource/base","res_id":100000001,"type":"Bundle"}] 
+[2026-07-22 16:22:03.720][TRC][Px26616][Tx55939][ResourceMgr.cpp][L595][MaaNS::ResourceNS::ResourceMgr::run_load] | leave, 18ms 
+[2026-07-22 16:22:03.722][DBG][Px26616][Tx48926][MaaFramework.cpp][L340][MaaResourceDestroy] [res=true] | enter 
+[2026-07-22 16:22:03.722][DBG][Px26616][Tx48926][ResourceMgr.cpp][L33][MaaNS::ResourceNS::ResourceMgr::~ResourceMgr] | enter 
+[2026-07-22 16:22:03.722][TRC][Px26616][Tx48926][ResourceMgr.cpp][L33][MaaNS::ResourceNS::ResourceMgr::~ResourceMgr] | leave, 0ms 
+[2026-07-22 16:22:03.722][DBG][Px26616][Tx48926][Base/AsyncRunner.hpp][L88][MaaNS::AsyncRunner<struct MaaNS::ResourceNS::PostPathItem>::~AsyncRunner] | enter 
+[2026-07-22 16:22:03.722][DBG][Px26616][Tx48926][Base/AsyncRunner.hpp][L96][MaaNS::AsyncRunner<struct MaaNS::ResourceNS::PostPathItem>::release] | enter 
+[2026-07-22 16:22:03.723][TRC][Px26616][Tx48926][Base/AsyncRunner.hpp][L96][MaaNS::AsyncRunner<struct MaaNS::ResourceNS::PostPathItem>::release] | leave, 1ms 
+[2026-07-22 16:22:03.723][TRC][Px26616][Tx48926][Base/AsyncRunner.hpp][L88][MaaNS::AsyncRunner<struct MaaNS::ResourceNS::PostPathItem>::~AsyncRunner] | leave, 1ms 
+[2026-07-22 16:22:03.723][TRC][Px26616][Tx48926][MaaFramework.cpp][L340][MaaResourceDestroy] | leave, 1ms 
+[2026-07-22 16:22:03.725][DBG][Px26616][Tx48926][MaaFramework.cpp][L333][MaaResourceCreate] | enter 
+[2026-07-22 16:22:03.725][DBG][Px26616][Tx48926][OCRResMgr.cpp][L15][MaaNS::ResourceNS::OCRResMgr::OCRResMgr] | enter 
+[2026-07-22 16:22:03.725][TRC][Px26616][Tx48926][OCRResMgr.cpp][L15][MaaNS::ResourceNS::OCRResMgr::OCRResMgr] | leave, 0ms 
+[2026-07-22 16:22:03.725][DBG][Px26616][Tx48926][ResourceMgr.cpp][L18][MaaNS::ResourceNS::ResourceMgr::ResourceMgr] | enter 
+[2026-07-22 16:22:03.725][INF][Px26616][Tx48926][ResourceMgr.cpp][L21][MaaNS::ResourceNS::ResourceMgr::ResourceMgr] [plugin_mgr.get_names()=["//?/C:/Users/asus/.maa-tools/install/latest/node_modules/@maaxyz/maa-node-win32-x64/plugins/MaaPluginDemo.dll"]] 
+[2026-07-22 16:22:03.725][INF][Px26616][Tx48926][Utils/EventDispatcher.hpp][L37][MaaNS::EventDispatcher::add_sink] [callback=true] [trans_arg=true] 
+[2026-07-22 16:22:03.725][TRC][Px26616][Tx48926][ResourceMgr.cpp][L18][MaaNS::ResourceNS::ResourceMgr::ResourceMgr] | leave, 0ms 
+[2026-07-22 16:22:03.725][TRC][Px26616][Tx48926][MaaFramework.cpp][L333][MaaResourceCreate] | leave, 0ms 
+[2026-07-22 16:22:03.725][DBG][Px26616][Tx48926][MaaResource.cpp][L124][MaaResourcePostBundle] [res=true] [path=E:\game\maa\MaaBTWorld\resource\base] | enter 
+[2026-07-22 16:22:03.725][INF][Px26616][Tx48926][ResourceMgr.cpp][L75][MaaNS::ResourceNS::ResourceMgr::post_path] [static_cast<int>(type)=0] [path=E:/game/maa/MaaBTWorld/resource/base] 
+[2026-07-22 16:22:03.725][TRC][Px26616][Tx48926][MaaResource.cpp][L124][MaaResourcePostBundle] | leave, 0ms 
+[2026-07-22 16:22:03.725][DBG][Px26616][Tx32816][ResourceMgr.cpp][L595][MaaNS::ResourceNS::ResourceMgr::run_load] [id=100000002] [static_cast<int>(item.type)=0] [item.path=E:/game/maa/MaaBTWorld/resource/base] | enter 
+[2026-07-22 16:22:03.725][INF][Px26616][Tx32816][Utils/EventDispatcher.hpp][L65][MaaNS::EventDispatcher::notify] !!!OnEventNotify!!! [handle=true] [msg=Resource.Loading.Starting] [details={"hash":"","path":"E:/game/maa/MaaBTWorld/resource/base","res_id":100000002,"type":"Bundle"}] 
+[2026-07-22 16:22:03.725][TRC][Px26616][Tx32816][GpuOptionWin32.cpp][L137][MaaNS::perfer_gpu] 
+[2026-07-22 16:22:03.726][INF][Px26616][Tx32816][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=0] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:22:03.726][WRN][Px26616][Tx32816][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=0] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:22:03.726][INF][Px26616][Tx32816][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=1] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:22:03.726][WRN][Px26616][Tx32816][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=1] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:22:03.726][INF][Px26616][Tx32816][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=2] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:22:03.726][WRN][Px26616][Tx32816][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=2] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:22:03.726][INF][Px26616][Tx32816][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=3] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:22:03.726][WRN][Px26616][Tx32816][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=3] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:22:03.726][INF][Px26616][Tx32816][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=4] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:22:03.726][WRN][Px26616][Tx32816][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=4] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:22:03.726][INF][Px26616][Tx32816][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=5] [adapter_desc=Microsoft Basic Render Driver] 
+[2026-07-22 16:22:03.726][WRN][Px26616][Tx32816][GpuOptionWin32.cpp][L191][MaaNS::perfer_gpu] software adapter, skip [adapter_index=5] [adapter_desc=Microsoft Basic Render Driver] 
+[2026-07-22 16:22:03.726][DBG][Px26616][Tx32816][GpuOptionWin32.cpp][L173][MaaNS::perfer_gpu] EnumAdapters1 DXGI_ERROR_NOT_FOUND [adapter_index=6] 
+[2026-07-22 16:22:03.726][INF][Px26616][Tx32816][GpuOptionWin32.cpp][L236][MaaNS::perfer_gpu] no available gpu found 
+[2026-07-22 16:22:03.726][WRN][Px26616][Tx32816][ResourceMgr.cpp][L514][MaaNS::ResourceNS::ResourceMgr::use_directml] No suitable inference GPU for DirectML 
+[2026-07-22 16:22:03.726][INF][Px26616][Tx32816][ONNXResMgr.cpp][L45][MaaNS::ResourceNS::ONNXResMgr::use_cpu] 
+[2026-07-22 16:22:03.726][INF][Px26616][Tx32816][OCRResMgr.cpp][L23][MaaNS::ResourceNS::OCRResMgr::use_cpu] 
+[2026-07-22 16:22:03.726][DBG][Px26616][Tx32816][ResourceMgr.cpp][L636][MaaNS::ResourceNS::ResourceMgr::load_bundle] [path=E:/game/maa/MaaBTWorld/resource/base] | enter 
+[2026-07-22 16:22:03.726][TRC][Px26616][Tx32816][GpuOptionWin32.cpp][L137][MaaNS::perfer_gpu] 
+[2026-07-22 16:22:03.726][INF][Px26616][Tx32816][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=0] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:22:03.726][WRN][Px26616][Tx32816][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=0] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:22:03.728][INF][Px26616][Tx32816][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=1] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:22:03.728][WRN][Px26616][Tx32816][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=1] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:22:03.728][INF][Px26616][Tx32816][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=2] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:22:03.728][WRN][Px26616][Tx32816][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=2] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:22:03.728][INF][Px26616][Tx32816][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=3] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:22:03.728][WRN][Px26616][Tx32816][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=3] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:22:03.728][INF][Px26616][Tx32816][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=4] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:22:03.728][WRN][Px26616][Tx32816][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=4] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:22:03.728][INF][Px26616][Tx32816][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=5] [adapter_desc=Microsoft Basic Render Driver] 
+[2026-07-22 16:22:03.728][WRN][Px26616][Tx32816][GpuOptionWin32.cpp][L191][MaaNS::perfer_gpu] software adapter, skip [adapter_index=5] [adapter_desc=Microsoft Basic Render Driver] 
+[2026-07-22 16:22:03.728][DBG][Px26616][Tx32816][GpuOptionWin32.cpp][L173][MaaNS::perfer_gpu] EnumAdapters1 DXGI_ERROR_NOT_FOUND [adapter_index=6] 
+[2026-07-22 16:22:03.728][INF][Px26616][Tx32816][GpuOptionWin32.cpp][L236][MaaNS::perfer_gpu] no available gpu found 
+[2026-07-22 16:22:03.728][WRN][Px26616][Tx32816][ResourceMgr.cpp][L514][MaaNS::ResourceNS::ResourceMgr::use_directml] No suitable inference GPU for DirectML 
+[2026-07-22 16:22:03.728][INF][Px26616][Tx32816][ONNXResMgr.cpp][L45][MaaNS::ResourceNS::ONNXResMgr::use_cpu] 
+[2026-07-22 16:22:03.728][INF][Px26616][Tx32816][OCRResMgr.cpp][L23][MaaNS::ResourceNS::OCRResMgr::use_cpu] 
+[2026-07-22 16:22:03.728][DBG][Px26616][Tx32816][DefaultPipelineMgr.cpp][L14][MaaNS::ResourceNS::DefaultPipelineMgr::load] [path=E:/game/maa/MaaBTWorld/resource/base/default_pipeline.json] | enter 
+[2026-07-22 16:22:03.729][INF][Px26616][Tx32816][DefaultPipelineMgr.cpp][L22][MaaNS::ResourceNS::DefaultPipelineMgr::load] [json={"Click":{"action":"Click","target":true},"Default":{"post_delay":200,"pre_delay":200,"rate_limit":1000,"timeout":20000},"LongPress":{"action":"LongPress","duration":1000,"target":true},"OCR":{"order_by":"Horizontal","recognition":"OCR","replace":[],"threshold":0.3},"Swipe":{"action":"Swipe","duration":200},"TemplateMatch":{"method":5,"recognition":"TemplateMatch","threshold":0.7}}] 
+[2026-07-22 16:22:03.729][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=] 
+[2026-07-22 16:22:03.729][TRC][Px26616][Tx32816][DefaultPipelineMgr.cpp][L14][MaaNS::ResourceNS::DefaultPipelineMgr::load] | leave, 0ms 
+[2026-07-22 16:22:03.729][DBG][Px26616][Tx32816][PipelineResMgr.cpp][L15][MaaNS::ResourceNS::PipelineResMgr::load] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline] | enter 
+[2026-07-22 16:22:03.729][DBG][Px26616][Tx32816][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/base.json] | enter 
+[2026-07-22 16:22:03.729][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=前往主页面右半页] 
+[2026-07-22 16:22:03.729][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=前往主页面左半页] 
+[2026-07-22 16:22:03.729][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=已在世界树页面] 
+[2026-07-22 16:22:03.729][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=已在主页面右半页] 
+[2026-07-22 16:22:03.729][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=已在主页面左半页] 
+[2026-07-22 16:22:03.729][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=已在崩坍之界页面] 
+[2026-07-22 16:22:03.729][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击世界树] 
+[2026-07-22 16:22:03.729][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击崩坍之界] 
+[2026-07-22 16:22:03.729][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点走未知生物] 
+[2026-07-22 16:22:03.729][TRC][Px26616][Tx32816][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:22:03.729][DBG][Px26616][Tx32816][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/close_game.json] | enter 
+[2026-07-22 16:22:03.730][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=关闭世界之外] 
+[2026-07-22 16:22:03.730][TRC][Px26616][Tx32816][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:22:03.730][DBG][Px26616][Tx32816][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/collapse_repair.json] | enter 
+[2026-07-22 16:22:03.730][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=关闭修补记录] 
+[2026-07-22 16:22:03.730][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=启动崩坍直接修补] 
+[2026-07-22 16:22:03.730][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=崩坍之界修补准备] 
+[2026-07-22 16:22:03.730][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=快速修补次数最大] 
+[2026-07-22 16:22:03.730][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=挑战次数不足] 
+[2026-07-22 16:22:03.730][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击修补裂隙] 
+[2026-07-22 16:22:03.730][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击快速修补] 
+[2026-07-22 16:22:03.730][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=确定快速修补] 
+[2026-07-22 16:22:03.730][TRC][Px26616][Tx32816][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:22:03.730][DBG][Px26616][Tx32816][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/popop.json] | enter 
+[2026-07-22 16:22:03.730][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=null] 
+[2026-07-22 16:22:03.730][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=stop] 
+[2026-07-22 16:22:03.730][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=关闭公告] 
+[2026-07-22 16:22:03.731][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=关闭活动弹窗] 
+[2026-07-22 16:22:03.731][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=果实已成熟] 
+[2026-07-22 16:22:03.731][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击空白处关闭] 
+[2026-07-22 16:22:03.731][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=返回上级页面] 
+[2026-07-22 16:22:03.731][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=返回主页面] 
+[2026-07-22 16:22:03.731][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=返回等待] 
+[2026-07-22 16:22:03.731][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=退出剧情进度popop] 
+[2026-07-22 16:22:03.731][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=退出各类页面] 
+[2026-07-22 16:22:03.731][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=退出培养成功popop] 
+[2026-07-22 16:22:03.731][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=退出获得奖励popop] 
+[2026-07-22 16:22:03.731][TRC][Px26616][Tx32816][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:22:03.731][DBG][Px26616][Tx32816][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/start_game.json] | enter 
+[2026-07-22 16:22:03.731][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=start_已在主页面] 
+[2026-07-22 16:22:03.731][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=sub_启动世外台服] 
+[2026-07-22 16:22:03.731][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=sub_启动世外官服] 
+[2026-07-22 16:22:03.731][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=下载资源中] 
+[2026-07-22 16:22:03.731][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=世界之外台服] 
+[2026-07-22 16:22:03.731][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=世界之外官服] 
+[2026-07-22 16:22:03.731][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=关闭系统更新公告] 
+[2026-07-22 16:22:03.731][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=启动世界之外] 
+[2026-07-22 16:22:03.731][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=启动再等等] 
+[2026-07-22 16:22:03.731][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=已在主页面] 
+[2026-07-22 16:22:03.731][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=更新已完成,重新登录] 
+[2026-07-22 16:22:03.731][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击开始旅程] 
+[2026-07-22 16:22:03.731][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=连接资源服务器] 
+[2026-07-22 16:22:03.731][TRC][Px26616][Tx32816][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:22:03.731][DBG][Px26616][Tx32816][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/switch_account.json] | enter 
+[2026-07-22 16:22:03.732][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=主页面切换账号] 
+[2026-07-22 16:22:03.732][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=切换账号启动] 
+[2026-07-22 16:22:03.732][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=向下找找账号] 
+[2026-07-22 16:22:03.732][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=启动切换账号] 
+[2026-07-22 16:22:03.732][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=更新已完成,重新登录_切换账号] 
+[2026-07-22 16:22:03.732][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击个人] 
+[2026-07-22 16:22:03.732][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击切换账号] 
+[2026-07-22 16:22:03.732][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击用户中心] 
+[2026-07-22 16:22:03.732][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击登录] 
+[2026-07-22 16:22:03.732][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击登录用户中心] 
+[2026-07-22 16:22:03.732][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击设置图标] 
+[2026-07-22 16:22:03.732][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击账号下拉菜单] 
+[2026-07-22 16:22:03.732][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=确认已切好账号] 
+[2026-07-22 16:22:03.732][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=选择登录账号] 
+[2026-07-22 16:22:03.732][TRC][Px26616][Tx32816][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:22:03.732][DBG][Px26616][Tx32816][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/tree.json] | enter 
+[2026-07-22 16:22:03.732][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=世界树_获取全部] 
+[2026-07-22 16:22:03.732][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=免费培养世界树] 
+[2026-07-22 16:22:03.732][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=准备收取世界树] 
+[2026-07-22 16:22:03.732][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=切换到快速培养] 
+[2026-07-22 16:22:03.732][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=启动培养世界树] 
+[2026-07-22 16:22:03.732][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=培养已达上限_免费确定] 
+[2026-07-22 16:22:03.732][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=培养已达上限_取消培养] 
+[2026-07-22 16:22:03.732][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=培养成功] 
+[2026-07-22 16:22:03.732][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=已在快速培养] 
+[2026-07-22 16:22:03.732][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=开始培养世界树] 
+[2026-07-22 16:22:03.732][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击培养20次] 
+[2026-07-22 16:22:03.732][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=确定培养] 
+[2026-07-22 16:22:03.732][TRC][Px26616][Tx32816][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:22:03.732][DBG][Px26616][Tx32816][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/tutorial.json] | enter 
+[2026-07-22 16:22:03.732][DBG][Px26616][Tx32816][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=Tutorial.Start] 
+[2026-07-22 16:22:03.732][TRC][Px26616][Tx32816][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:22:03.732][TRC][Px26616][Tx32816][PipelineResMgr.cpp][L15][MaaNS::ResourceNS::PipelineResMgr::load] | leave, 4ms 
+[2026-07-22 16:22:03.733][DBG][Px26616][Tx32816][OCRResMgr.cpp][L62][MaaNS::ResourceNS::OCRResMgr::lazy_load] [path=E:/game/maa/MaaBTWorld/resource/base/model/ocr] | enter 
+[2026-07-22 16:22:03.733][TRC][Px26616][Tx32816][OCRResMgr.cpp][L62][MaaNS::ResourceNS::OCRResMgr::lazy_load] | leave, 0ms 
+[2026-07-22 16:22:03.733][DBG][Px26616][Tx32816][TemplateResMgr.cpp][L10][MaaNS::ResourceNS::TemplateResMgr::lazy_load] [path=E:/game/maa/MaaBTWorld/resource/base/image] | enter 
+[2026-07-22 16:22:03.733][TRC][Px26616][Tx32816][TemplateResMgr.cpp][L10][MaaNS::ResourceNS::TemplateResMgr::lazy_load] | leave, 0ms 
+[2026-07-22 16:22:03.733][INF][Px26616][Tx32816][ResourceMgr.cpp][L681][MaaNS::ResourceNS::ResourceMgr::load_bundle] [path=E:/game/maa/MaaBTWorld/resource/base] [ret=true] [to_load=true] 
+[2026-07-22 16:22:03.733][TRC][Px26616][Tx32816][ResourceMgr.cpp][L636][MaaNS::ResourceNS::ResourceMgr::load_bundle] | leave, 6ms 
+[2026-07-22 16:22:03.733][INF][Px26616][Tx32816][ResourceMgr.cpp][L217][MaaNS::ResourceNS::ResourceMgr::calc_hash] [hash_cache_=ae792d7d42182808] 
+[2026-07-22 16:22:03.733][INF][Px26616][Tx32816][Utils/EventDispatcher.hpp][L65][MaaNS::EventDispatcher::notify] !!!OnEventNotify!!! [handle=true] [msg=Resource.Loading.Succeeded] [details={"hash":"ae792d7d42182808","path":"E:/game/maa/MaaBTWorld/resource/base","res_id":100000002,"type":"Bundle"}] 
+[2026-07-22 16:22:03.733][TRC][Px26616][Tx32816][ResourceMgr.cpp][L595][MaaNS::ResourceNS::ResourceMgr::run_load] | leave, 7ms 
+[2026-07-22 16:22:03.733][DBG][Px26616][Tx48926][MaaFramework.cpp][L340][MaaResourceDestroy] [res=true] | enter 
+[2026-07-22 16:22:03.733][DBG][Px26616][Tx48926][ResourceMgr.cpp][L33][MaaNS::ResourceNS::ResourceMgr::~ResourceMgr] | enter 
+[2026-07-22 16:22:03.733][TRC][Px26616][Tx48926][ResourceMgr.cpp][L33][MaaNS::ResourceNS::ResourceMgr::~ResourceMgr] | leave, 0ms 
+[2026-07-22 16:22:03.733][DBG][Px26616][Tx48926][Base/AsyncRunner.hpp][L88][MaaNS::AsyncRunner<struct MaaNS::ResourceNS::PostPathItem>::~AsyncRunner] | enter 
+[2026-07-22 16:22:03.733][DBG][Px26616][Tx48926][Base/AsyncRunner.hpp][L96][MaaNS::AsyncRunner<struct MaaNS::ResourceNS::PostPathItem>::release] | enter 
+[2026-07-22 16:22:03.733][TRC][Px26616][Tx48926][Base/AsyncRunner.hpp][L96][MaaNS::AsyncRunner<struct MaaNS::ResourceNS::PostPathItem>::release] | leave, 0ms 
+[2026-07-22 16:22:03.733][TRC][Px26616][Tx48926][Base/AsyncRunner.hpp][L88][MaaNS::AsyncRunner<struct MaaNS::ResourceNS::PostPathItem>::~AsyncRunner] | leave, 0ms 
+[2026-07-22 16:22:03.733][TRC][Px26616][Tx48926][MaaFramework.cpp][L340][MaaResourceDestroy] | leave, 0ms 
+[2026-07-22 16:22:03.737][DBG][Px26616][Tx48926][Logger] ----------------------------- 
+[2026-07-22 16:22:03.737][DBG][Px26616][Tx48926][Logger] Close log 
+[2026-07-22 16:22:03.737][DBG][Px26616][Tx48926][Logger] ----------------------------- 
+[2026-07-22 16:28:01.847][DBG][Px38232][Tx56789][Logger] ----------------------------- 
+[2026-07-22 16:28:01.848][DBG][Px38232][Tx56789][Logger] MAA Process Start 
+[2026-07-22 16:28:01.848][DBG][Px38232][Tx56789][Logger] Version v5.12.2 
+[2026-07-22 16:28:01.848][DBG][Px38232][Tx56789][Logger] Built at Jul 19 2026 14:59:13 
+[2026-07-22 16:28:01.848][DBG][Px38232][Tx56789][Logger] Windows x64 
+[2026-07-22 16:28:01.848][DBG][Px38232][Tx56789][Logger] Working E:/game/maa/MaaBTWorld 
+[2026-07-22 16:28:01.848][DBG][Px38232][Tx56789][Logger] Logging E:/game/maa/MaaBTWorld/maafw.log 
+[2026-07-22 16:28:01.848][DBG][Px38232][Tx56789][Logger] ----------------------------- 
+[2026-07-22 16:28:01.848][TRC][Px38232][Tx56789][OptionMgr.cpp][L35][MaaNS::GlobalNS::OptionMgr::set_log_dir] | leave, 0ms 
+[2026-07-22 16:28:01.848][TRC][Px38232][Tx56789][OptionMgr.cpp][L10][MaaNS::GlobalNS::OptionMgr::set_option] | leave, 0ms 
+[2026-07-22 16:28:01.848][TRC][Px38232][Tx56789][MaaFramework.cpp][L371][MaaGlobalSetOption] | leave, 0ms 
+[2026-07-22 16:28:02.053][DBG][Px38232][Tx56789][MaaFramework.cpp][L333][MaaResourceCreate] | enter 
+[2026-07-22 16:28:02.053][DBG][Px38232][Tx56789][OCRResMgr.cpp][L15][MaaNS::ResourceNS::OCRResMgr::OCRResMgr] | enter 
+[2026-07-22 16:28:02.053][TRC][Px38232][Tx56789][OCRResMgr.cpp][L15][MaaNS::ResourceNS::OCRResMgr::OCRResMgr] | leave, 0ms 
+[2026-07-22 16:28:02.073][DBG][Px38232][Tx56789][ResourceMgr.cpp][L18][MaaNS::ResourceNS::ResourceMgr::ResourceMgr] | enter 
+[2026-07-22 16:28:02.073][INF][Px38232][Tx56789][ResourceMgr.cpp][L21][MaaNS::ResourceNS::ResourceMgr::ResourceMgr] [plugin_mgr.get_names()=["//?/C:/Users/asus/.maa-tools/install/5.12.2/node_modules/@maaxyz/maa-node-win32-x64/plugins/MaaPluginDemo.dll"]] 
+[2026-07-22 16:28:02.073][INF][Px38232][Tx56789][Utils/EventDispatcher.hpp][L37][MaaNS::EventDispatcher::add_sink] [callback=true] [trans_arg=true] 
+[2026-07-22 16:28:02.073][TRC][Px38232][Tx56789][ResourceMgr.cpp][L18][MaaNS::ResourceNS::ResourceMgr::ResourceMgr] | leave, 0ms 
+[2026-07-22 16:28:02.073][TRC][Px38232][Tx56789][MaaFramework.cpp][L333][MaaResourceCreate] | leave, 19ms 
+[2026-07-22 16:28:02.073][DBG][Px38232][Tx56789][MaaResource.cpp][L124][MaaResourcePostBundle] [res=true] [path=E:\game\maa\MaaBTWorld\resource\base] | enter 
+[2026-07-22 16:28:02.073][INF][Px38232][Tx56789][ResourceMgr.cpp][L75][MaaNS::ResourceNS::ResourceMgr::post_path] [static_cast<int>(type)=0] [path=E:/game/maa/MaaBTWorld/resource/base] 
+[2026-07-22 16:28:02.073][TRC][Px38232][Tx56789][MaaResource.cpp][L124][MaaResourcePostBundle] | leave, 0ms 
+[2026-07-22 16:28:02.074][DBG][Px38232][Tx59031][ResourceMgr.cpp][L595][MaaNS::ResourceNS::ResourceMgr::run_load] [id=100000001] [static_cast<int>(item.type)=0] [item.path=E:/game/maa/MaaBTWorld/resource/base] | enter 
+[2026-07-22 16:28:02.074][INF][Px38232][Tx59031][Utils/EventDispatcher.hpp][L65][MaaNS::EventDispatcher::notify] !!!OnEventNotify!!! [handle=true] [msg=Resource.Loading.Starting] [details={"hash":"","path":"E:/game/maa/MaaBTWorld/resource/base","res_id":100000001,"type":"Bundle"}] 
+[2026-07-22 16:28:02.074][INF][Px38232][Tx59031][ResourceMgr.cpp][L372][MaaNS::ResourceNS::ResourceMgr::available_providers] [all_providers_vec=["DmlExecutionProvider","CPUExecutionProvider"]] 
+[2026-07-22 16:28:02.074][INF][Px38232][Tx59031][ResourceMgr.cpp][L400][MaaNS::ResourceNS::ResourceMgr::available_providers] [s_provider_cache=[2,1]] 
+[2026-07-22 16:28:02.074][TRC][Px38232][Tx59031][GpuOptionWin32.cpp][L137][MaaNS::perfer_gpu] 
+[2026-07-22 16:28:02.094][INF][Px38232][Tx59031][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=0] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:28:02.094][WRN][Px38232][Tx59031][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=0] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:28:02.094][INF][Px38232][Tx59031][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=1] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:28:02.095][WRN][Px38232][Tx59031][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=1] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:28:02.095][INF][Px38232][Tx59031][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=2] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:28:02.095][WRN][Px38232][Tx59031][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=2] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:28:02.095][INF][Px38232][Tx59031][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=3] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:28:02.095][WRN][Px38232][Tx59031][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=3] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:28:02.095][INF][Px38232][Tx59031][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=4] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:28:02.095][WRN][Px38232][Tx59031][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=4] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:28:02.095][INF][Px38232][Tx59031][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=5] [adapter_desc=Microsoft Basic Render Driver] 
+[2026-07-22 16:28:02.095][WRN][Px38232][Tx59031][GpuOptionWin32.cpp][L191][MaaNS::perfer_gpu] software adapter, skip [adapter_index=5] [adapter_desc=Microsoft Basic Render Driver] 
+[2026-07-22 16:28:02.095][DBG][Px38232][Tx59031][GpuOptionWin32.cpp][L173][MaaNS::perfer_gpu] EnumAdapters1 DXGI_ERROR_NOT_FOUND [adapter_index=6] 
+[2026-07-22 16:28:02.095][INF][Px38232][Tx59031][GpuOptionWin32.cpp][L236][MaaNS::perfer_gpu] no available gpu found 
+[2026-07-22 16:28:02.095][WRN][Px38232][Tx59031][ResourceMgr.cpp][L514][MaaNS::ResourceNS::ResourceMgr::use_directml] No suitable inference GPU for DirectML 
+[2026-07-22 16:28:02.095][INF][Px38232][Tx59031][ONNXResMgr.cpp][L45][MaaNS::ResourceNS::ONNXResMgr::use_cpu] 
+[2026-07-22 16:28:02.095][INF][Px38232][Tx59031][OCRResMgr.cpp][L23][MaaNS::ResourceNS::OCRResMgr::use_cpu] 
+[2026-07-22 16:28:02.095][DBG][Px38232][Tx59031][ResourceMgr.cpp][L636][MaaNS::ResourceNS::ResourceMgr::load_bundle] [path=E:/game/maa/MaaBTWorld/resource/base] | enter 
+[2026-07-22 16:28:02.095][TRC][Px38232][Tx59031][GpuOptionWin32.cpp][L137][MaaNS::perfer_gpu] 
+[2026-07-22 16:28:02.095][INF][Px38232][Tx59031][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=0] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:28:02.095][WRN][Px38232][Tx59031][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=0] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:28:02.095][INF][Px38232][Tx59031][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=1] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:28:02.095][WRN][Px38232][Tx59031][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=1] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:28:02.095][INF][Px38232][Tx59031][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=2] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:28:02.095][WRN][Px38232][Tx59031][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=2] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:28:02.095][INF][Px38232][Tx59031][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=3] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:28:02.095][WRN][Px38232][Tx59031][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=3] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:28:02.095][INF][Px38232][Tx59031][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=4] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:28:02.095][WRN][Px38232][Tx59031][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=4] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:28:02.095][INF][Px38232][Tx59031][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=5] [adapter_desc=Microsoft Basic Render Driver] 
+[2026-07-22 16:28:02.095][WRN][Px38232][Tx59031][GpuOptionWin32.cpp][L191][MaaNS::perfer_gpu] software adapter, skip [adapter_index=5] [adapter_desc=Microsoft Basic Render Driver] 
+[2026-07-22 16:28:02.095][DBG][Px38232][Tx59031][GpuOptionWin32.cpp][L173][MaaNS::perfer_gpu] EnumAdapters1 DXGI_ERROR_NOT_FOUND [adapter_index=6] 
+[2026-07-22 16:28:02.096][INF][Px38232][Tx59031][GpuOptionWin32.cpp][L236][MaaNS::perfer_gpu] no available gpu found 
+[2026-07-22 16:28:02.096][WRN][Px38232][Tx59031][ResourceMgr.cpp][L514][MaaNS::ResourceNS::ResourceMgr::use_directml] No suitable inference GPU for DirectML 
+[2026-07-22 16:28:02.096][INF][Px38232][Tx59031][ONNXResMgr.cpp][L45][MaaNS::ResourceNS::ONNXResMgr::use_cpu] 
+[2026-07-22 16:28:02.096][INF][Px38232][Tx59031][OCRResMgr.cpp][L23][MaaNS::ResourceNS::OCRResMgr::use_cpu] 
+[2026-07-22 16:28:02.096][DBG][Px38232][Tx59031][DefaultPipelineMgr.cpp][L14][MaaNS::ResourceNS::DefaultPipelineMgr::load] [path=E:/game/maa/MaaBTWorld/resource/base/default_pipeline.json] | enter 
+[2026-07-22 16:28:02.096][INF][Px38232][Tx59031][DefaultPipelineMgr.cpp][L22][MaaNS::ResourceNS::DefaultPipelineMgr::load] [json={"Click":{"action":"Click","target":true},"Default":{"post_delay":200,"pre_delay":200,"rate_limit":1000,"timeout":20000},"LongPress":{"action":"LongPress","duration":1000,"target":true},"OCR":{"order_by":"Horizontal","recognition":"OCR","replace":[],"threshold":0.3},"Swipe":{"action":"Swipe","duration":200},"TemplateMatch":{"method":5,"recognition":"TemplateMatch","threshold":0.7}}] 
+[2026-07-22 16:28:02.096][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=] 
+[2026-07-22 16:28:02.097][TRC][Px38232][Tx59031][DefaultPipelineMgr.cpp][L14][MaaNS::ResourceNS::DefaultPipelineMgr::load] | leave, 0ms 
+[2026-07-22 16:28:02.097][DBG][Px38232][Tx59031][PipelineResMgr.cpp][L15][MaaNS::ResourceNS::PipelineResMgr::load] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline] | enter 
+[2026-07-22 16:28:02.097][DBG][Px38232][Tx59031][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/base.json] | enter 
+[2026-07-22 16:28:02.097][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=前往主页面右半页] 
+[2026-07-22 16:28:02.097][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=前往主页面左半页] 
+[2026-07-22 16:28:02.097][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=已在世界树页面] 
+[2026-07-22 16:28:02.097][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=已在主页面右半页] 
+[2026-07-22 16:28:02.097][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=已在主页面左半页] 
+[2026-07-22 16:28:02.097][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=已在崩坍之界页面] 
+[2026-07-22 16:28:02.097][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击世界树] 
+[2026-07-22 16:28:02.097][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击崩坍之界] 
+[2026-07-22 16:28:02.097][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点走未知生物] 
+[2026-07-22 16:28:02.097][TRC][Px38232][Tx59031][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:28:02.097][DBG][Px38232][Tx59031][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/close_game.json] | enter 
+[2026-07-22 16:28:02.099][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=关闭世界之外] 
+[2026-07-22 16:28:02.099][TRC][Px38232][Tx59031][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:28:02.099][DBG][Px38232][Tx59031][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/collapse_repair.json] | enter 
+[2026-07-22 16:28:02.099][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=关闭修补记录] 
+[2026-07-22 16:28:02.099][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=启动崩坍直接修补] 
+[2026-07-22 16:28:02.099][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=崩坍之界修补准备] 
+[2026-07-22 16:28:02.099][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=快速修补次数最大] 
+[2026-07-22 16:28:02.099][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=挑战次数不足] 
+[2026-07-22 16:28:02.099][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击修补裂隙] 
+[2026-07-22 16:28:02.099][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击快速修补] 
+[2026-07-22 16:28:02.099][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=确定快速修补] 
+[2026-07-22 16:28:02.099][TRC][Px38232][Tx59031][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:28:02.099][DBG][Px38232][Tx59031][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/popop.json] | enter 
+[2026-07-22 16:28:02.099][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=null] 
+[2026-07-22 16:28:02.099][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=stop] 
+[2026-07-22 16:28:02.099][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=关闭公告] 
+[2026-07-22 16:28:02.099][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=关闭活动弹窗] 
+[2026-07-22 16:28:02.099][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=果实已成熟] 
+[2026-07-22 16:28:02.099][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击空白处关闭] 
+[2026-07-22 16:28:02.099][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=返回上级页面] 
+[2026-07-22 16:28:02.099][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=返回主页面] 
+[2026-07-22 16:28:02.099][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=返回等待] 
+[2026-07-22 16:28:02.099][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=退出剧情进度popop] 
+[2026-07-22 16:28:02.100][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=退出各类页面] 
+[2026-07-22 16:28:02.100][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=退出培养成功popop] 
+[2026-07-22 16:28:02.100][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=退出获得奖励popop] 
+[2026-07-22 16:28:02.100][TRC][Px38232][Tx59031][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:28:02.100][DBG][Px38232][Tx59031][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/start_game.json] | enter 
+[2026-07-22 16:28:02.100][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=start_已在主页面] 
+[2026-07-22 16:28:02.100][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=sub_启动世外台服] 
+[2026-07-22 16:28:02.100][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=sub_启动世外官服] 
+[2026-07-22 16:28:02.100][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=下载资源中] 
+[2026-07-22 16:28:02.100][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=世界之外台服] 
+[2026-07-22 16:28:02.100][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=世界之外官服] 
+[2026-07-22 16:28:02.100][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=关闭系统更新公告] 
+[2026-07-22 16:28:02.100][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=启动世界之外] 
+[2026-07-22 16:28:02.100][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=启动再等等] 
+[2026-07-22 16:28:02.100][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=已在主页面] 
+[2026-07-22 16:28:02.100][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=更新已完成,重新登录] 
+[2026-07-22 16:28:02.100][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击开始旅程] 
+[2026-07-22 16:28:02.100][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=连接资源服务器] 
+[2026-07-22 16:28:02.101][TRC][Px38232][Tx59031][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:28:02.101][DBG][Px38232][Tx59031][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/switch_account.json] | enter 
+[2026-07-22 16:28:02.101][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=主页面切换账号] 
+[2026-07-22 16:28:02.101][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=切换账号启动] 
+[2026-07-22 16:28:02.101][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=向下找找账号] 
+[2026-07-22 16:28:02.101][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=启动切换账号] 
+[2026-07-22 16:28:02.101][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=更新已完成,重新登录_切换账号] 
+[2026-07-22 16:28:02.101][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击个人] 
+[2026-07-22 16:28:02.101][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击切换账号] 
+[2026-07-22 16:28:02.101][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击用户中心] 
+[2026-07-22 16:28:02.101][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击登录] 
+[2026-07-22 16:28:02.101][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击登录用户中心] 
+[2026-07-22 16:28:02.101][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击设置图标] 
+[2026-07-22 16:28:02.101][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击账号下拉菜单] 
+[2026-07-22 16:28:02.101][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=确认已切好账号] 
+[2026-07-22 16:28:02.101][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=选择登录账号] 
+[2026-07-22 16:28:02.101][TRC][Px38232][Tx59031][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:28:02.101][DBG][Px38232][Tx59031][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/tree.json] | enter 
+[2026-07-22 16:28:02.101][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=世界树_获取全部] 
+[2026-07-22 16:28:02.101][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=免费培养世界树] 
+[2026-07-22 16:28:02.101][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=准备收取世界树] 
+[2026-07-22 16:28:02.102][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=切换到快速培养] 
+[2026-07-22 16:28:02.102][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=启动培养世界树] 
+[2026-07-22 16:28:02.102][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=培养已达上限_免费确定] 
+[2026-07-22 16:28:02.102][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=培养已达上限_取消培养] 
+[2026-07-22 16:28:02.102][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=培养成功] 
+[2026-07-22 16:28:02.102][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=已在快速培养] 
+[2026-07-22 16:28:02.102][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=开始培养世界树] 
+[2026-07-22 16:28:02.102][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击培养20次] 
+[2026-07-22 16:28:02.102][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=确定培养] 
+[2026-07-22 16:28:02.102][TRC][Px38232][Tx59031][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:28:02.102][DBG][Px38232][Tx59031][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/tutorial.json] | enter 
+[2026-07-22 16:28:02.102][DBG][Px38232][Tx59031][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=Tutorial.Start] 
+[2026-07-22 16:28:02.102][TRC][Px38232][Tx59031][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:28:02.102][TRC][Px38232][Tx59031][PipelineResMgr.cpp][L15][MaaNS::ResourceNS::PipelineResMgr::load] | leave, 5ms 
+[2026-07-22 16:28:02.102][DBG][Px38232][Tx59031][OCRResMgr.cpp][L62][MaaNS::ResourceNS::OCRResMgr::lazy_load] [path=E:/game/maa/MaaBTWorld/resource/base/model/ocr] | enter 
+[2026-07-22 16:28:02.102][TRC][Px38232][Tx59031][OCRResMgr.cpp][L62][MaaNS::ResourceNS::OCRResMgr::lazy_load] | leave, 0ms 
+[2026-07-22 16:28:02.102][DBG][Px38232][Tx59031][TemplateResMgr.cpp][L10][MaaNS::ResourceNS::TemplateResMgr::lazy_load] [path=E:/game/maa/MaaBTWorld/resource/base/image] | enter 
+[2026-07-22 16:28:02.102][TRC][Px38232][Tx59031][TemplateResMgr.cpp][L10][MaaNS::ResourceNS::TemplateResMgr::lazy_load] | leave, 0ms 
+[2026-07-22 16:28:02.102][INF][Px38232][Tx59031][ResourceMgr.cpp][L681][MaaNS::ResourceNS::ResourceMgr::load_bundle] [path=E:/game/maa/MaaBTWorld/resource/base] [ret=true] [to_load=true] 
+[2026-07-22 16:28:02.102][TRC][Px38232][Tx59031][ResourceMgr.cpp][L636][MaaNS::ResourceNS::ResourceMgr::load_bundle] | leave, 7ms 
+[2026-07-22 16:28:02.103][INF][Px38232][Tx59031][ResourceMgr.cpp][L217][MaaNS::ResourceNS::ResourceMgr::calc_hash] [hash_cache_=ae792d7d42182808] 
+[2026-07-22 16:28:02.103][INF][Px38232][Tx59031][Utils/EventDispatcher.hpp][L65][MaaNS::EventDispatcher::notify] !!!OnEventNotify!!! [handle=true] [msg=Resource.Loading.Succeeded] [details={"hash":"ae792d7d42182808","path":"E:/game/maa/MaaBTWorld/resource/base","res_id":100000001,"type":"Bundle"}] 
+[2026-07-22 16:28:02.103][TRC][Px38232][Tx59031][ResourceMgr.cpp][L595][MaaNS::ResourceNS::ResourceMgr::run_load] | leave, 29ms 
+[2026-07-22 16:28:02.103][DBG][Px38232][Tx56789][MaaFramework.cpp][L340][MaaResourceDestroy] [res=true] | enter 
+[2026-07-22 16:28:02.103][DBG][Px38232][Tx56789][ResourceMgr.cpp][L33][MaaNS::ResourceNS::ResourceMgr::~ResourceMgr] | enter 
+[2026-07-22 16:28:02.103][TRC][Px38232][Tx56789][ResourceMgr.cpp][L33][MaaNS::ResourceNS::ResourceMgr::~ResourceMgr] | leave, 0ms 
+[2026-07-22 16:28:02.103][DBG][Px38232][Tx56789][Base/AsyncRunner.hpp][L88][MaaNS::AsyncRunner<struct MaaNS::ResourceNS::PostPathItem>::~AsyncRunner] | enter 
+[2026-07-22 16:28:02.103][DBG][Px38232][Tx56789][Base/AsyncRunner.hpp][L96][MaaNS::AsyncRunner<struct MaaNS::ResourceNS::PostPathItem>::release] | enter 
+[2026-07-22 16:28:02.103][TRC][Px38232][Tx56789][Base/AsyncRunner.hpp][L96][MaaNS::AsyncRunner<struct MaaNS::ResourceNS::PostPathItem>::release] | leave, 0ms 
+[2026-07-22 16:28:02.103][TRC][Px38232][Tx56789][Base/AsyncRunner.hpp][L88][MaaNS::AsyncRunner<struct MaaNS::ResourceNS::PostPathItem>::~AsyncRunner] | leave, 0ms 
+[2026-07-22 16:28:02.103][TRC][Px38232][Tx56789][MaaFramework.cpp][L340][MaaResourceDestroy] | leave, 0ms 
+[2026-07-22 16:28:02.105][DBG][Px38232][Tx56789][MaaFramework.cpp][L333][MaaResourceCreate] | enter 
+[2026-07-22 16:28:02.105][DBG][Px38232][Tx56789][OCRResMgr.cpp][L15][MaaNS::ResourceNS::OCRResMgr::OCRResMgr] | enter 
+[2026-07-22 16:28:02.105][TRC][Px38232][Tx56789][OCRResMgr.cpp][L15][MaaNS::ResourceNS::OCRResMgr::OCRResMgr] | leave, 0ms 
+[2026-07-22 16:28:02.105][DBG][Px38232][Tx56789][ResourceMgr.cpp][L18][MaaNS::ResourceNS::ResourceMgr::ResourceMgr] | enter 
+[2026-07-22 16:28:02.105][INF][Px38232][Tx56789][ResourceMgr.cpp][L21][MaaNS::ResourceNS::ResourceMgr::ResourceMgr] [plugin_mgr.get_names()=["//?/C:/Users/asus/.maa-tools/install/5.12.2/node_modules/@maaxyz/maa-node-win32-x64/plugins/MaaPluginDemo.dll"]] 
+[2026-07-22 16:28:02.105][INF][Px38232][Tx56789][Utils/EventDispatcher.hpp][L37][MaaNS::EventDispatcher::add_sink] [callback=true] [trans_arg=true] 
+[2026-07-22 16:28:02.105][TRC][Px38232][Tx56789][ResourceMgr.cpp][L18][MaaNS::ResourceNS::ResourceMgr::ResourceMgr] | leave, 0ms 
+[2026-07-22 16:28:02.105][TRC][Px38232][Tx56789][MaaFramework.cpp][L333][MaaResourceCreate] | leave, 0ms 
+[2026-07-22 16:28:02.105][DBG][Px38232][Tx56789][MaaResource.cpp][L124][MaaResourcePostBundle] [res=true] [path=E:\game\maa\MaaBTWorld\resource\base] | enter 
+[2026-07-22 16:28:02.105][INF][Px38232][Tx56789][ResourceMgr.cpp][L75][MaaNS::ResourceNS::ResourceMgr::post_path] [static_cast<int>(type)=0] [path=E:/game/maa/MaaBTWorld/resource/base] 
+[2026-07-22 16:28:02.105][TRC][Px38232][Tx56789][MaaResource.cpp][L124][MaaResourcePostBundle] | leave, 0ms 
+[2026-07-22 16:28:02.105][DBG][Px38232][Tx7181][ResourceMgr.cpp][L595][MaaNS::ResourceNS::ResourceMgr::run_load] [id=100000002] [static_cast<int>(item.type)=0] [item.path=E:/game/maa/MaaBTWorld/resource/base] | enter 
+[2026-07-22 16:28:02.105][INF][Px38232][Tx7181][Utils/EventDispatcher.hpp][L65][MaaNS::EventDispatcher::notify] !!!OnEventNotify!!! [handle=true] [msg=Resource.Loading.Starting] [details={"hash":"","path":"E:/game/maa/MaaBTWorld/resource/base","res_id":100000002,"type":"Bundle"}] 
+[2026-07-22 16:28:02.105][TRC][Px38232][Tx7181][GpuOptionWin32.cpp][L137][MaaNS::perfer_gpu] 
+[2026-07-22 16:28:02.106][INF][Px38232][Tx7181][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=0] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:28:02.106][WRN][Px38232][Tx7181][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=0] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:28:02.106][INF][Px38232][Tx7181][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=1] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:28:02.106][WRN][Px38232][Tx7181][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=1] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:28:02.106][INF][Px38232][Tx7181][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=2] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:28:02.106][WRN][Px38232][Tx7181][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=2] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:28:02.106][INF][Px38232][Tx7181][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=3] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:28:02.106][WRN][Px38232][Tx7181][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=3] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:28:02.106][INF][Px38232][Tx7181][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=4] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:28:02.106][WRN][Px38232][Tx7181][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=4] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:28:02.106][INF][Px38232][Tx7181][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=5] [adapter_desc=Microsoft Basic Render Driver] 
+[2026-07-22 16:28:02.107][WRN][Px38232][Tx7181][GpuOptionWin32.cpp][L191][MaaNS::perfer_gpu] software adapter, skip [adapter_index=5] [adapter_desc=Microsoft Basic Render Driver] 
+[2026-07-22 16:28:02.107][DBG][Px38232][Tx7181][GpuOptionWin32.cpp][L173][MaaNS::perfer_gpu] EnumAdapters1 DXGI_ERROR_NOT_FOUND [adapter_index=6] 
+[2026-07-22 16:28:02.107][INF][Px38232][Tx7181][GpuOptionWin32.cpp][L236][MaaNS::perfer_gpu] no available gpu found 
+[2026-07-22 16:28:02.107][WRN][Px38232][Tx7181][ResourceMgr.cpp][L514][MaaNS::ResourceNS::ResourceMgr::use_directml] No suitable inference GPU for DirectML 
+[2026-07-22 16:28:02.107][INF][Px38232][Tx7181][ONNXResMgr.cpp][L45][MaaNS::ResourceNS::ONNXResMgr::use_cpu] 
+[2026-07-22 16:28:02.107][INF][Px38232][Tx7181][OCRResMgr.cpp][L23][MaaNS::ResourceNS::OCRResMgr::use_cpu] 
+[2026-07-22 16:28:02.107][DBG][Px38232][Tx7181][ResourceMgr.cpp][L636][MaaNS::ResourceNS::ResourceMgr::load_bundle] [path=E:/game/maa/MaaBTWorld/resource/base] | enter 
+[2026-07-22 16:28:02.107][TRC][Px38232][Tx7181][GpuOptionWin32.cpp][L137][MaaNS::perfer_gpu] 
+[2026-07-22 16:28:02.111][INF][Px38232][Tx7181][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=0] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:28:02.111][WRN][Px38232][Tx7181][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=0] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:28:02.113][INF][Px38232][Tx7181][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=1] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:28:02.113][WRN][Px38232][Tx7181][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=1] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:28:02.113][INF][Px38232][Tx7181][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=2] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:28:02.113][WRN][Px38232][Tx7181][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=2] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:28:02.113][INF][Px38232][Tx7181][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=3] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:28:02.113][WRN][Px38232][Tx7181][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=3] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:28:02.114][INF][Px38232][Tx7181][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=4] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:28:02.114][WRN][Px38232][Tx7181][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=4] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:28:02.114][INF][Px38232][Tx7181][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=5] [adapter_desc=Microsoft Basic Render Driver] 
+[2026-07-22 16:28:02.114][WRN][Px38232][Tx7181][GpuOptionWin32.cpp][L191][MaaNS::perfer_gpu] software adapter, skip [adapter_index=5] [adapter_desc=Microsoft Basic Render Driver] 
+[2026-07-22 16:28:02.114][DBG][Px38232][Tx7181][GpuOptionWin32.cpp][L173][MaaNS::perfer_gpu] EnumAdapters1 DXGI_ERROR_NOT_FOUND [adapter_index=6] 
+[2026-07-22 16:28:02.114][INF][Px38232][Tx7181][GpuOptionWin32.cpp][L236][MaaNS::perfer_gpu] no available gpu found 
+[2026-07-22 16:28:02.114][WRN][Px38232][Tx7181][ResourceMgr.cpp][L514][MaaNS::ResourceNS::ResourceMgr::use_directml] No suitable inference GPU for DirectML 
+[2026-07-22 16:28:02.114][INF][Px38232][Tx7181][ONNXResMgr.cpp][L45][MaaNS::ResourceNS::ONNXResMgr::use_cpu] 
+[2026-07-22 16:28:02.114][INF][Px38232][Tx7181][OCRResMgr.cpp][L23][MaaNS::ResourceNS::OCRResMgr::use_cpu] 
+[2026-07-22 16:28:02.114][DBG][Px38232][Tx7181][DefaultPipelineMgr.cpp][L14][MaaNS::ResourceNS::DefaultPipelineMgr::load] [path=E:/game/maa/MaaBTWorld/resource/base/default_pipeline.json] | enter 
+[2026-07-22 16:28:02.114][INF][Px38232][Tx7181][DefaultPipelineMgr.cpp][L22][MaaNS::ResourceNS::DefaultPipelineMgr::load] [json={"Click":{"action":"Click","target":true},"Default":{"post_delay":200,"pre_delay":200,"rate_limit":1000,"timeout":20000},"LongPress":{"action":"LongPress","duration":1000,"target":true},"OCR":{"order_by":"Horizontal","recognition":"OCR","replace":[],"threshold":0.3},"Swipe":{"action":"Swipe","duration":200},"TemplateMatch":{"method":5,"recognition":"TemplateMatch","threshold":0.7}}] 
+[2026-07-22 16:28:02.114][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=] 
+[2026-07-22 16:28:02.114][TRC][Px38232][Tx7181][DefaultPipelineMgr.cpp][L14][MaaNS::ResourceNS::DefaultPipelineMgr::load] | leave, 0ms 
+[2026-07-22 16:28:02.114][DBG][Px38232][Tx7181][PipelineResMgr.cpp][L15][MaaNS::ResourceNS::PipelineResMgr::load] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline] | enter 
+[2026-07-22 16:28:02.116][DBG][Px38232][Tx7181][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/base.json] | enter 
+[2026-07-22 16:28:02.116][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=前往主页面右半页] 
+[2026-07-22 16:28:02.116][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=前往主页面左半页] 
+[2026-07-22 16:28:02.116][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=已在世界树页面] 
+[2026-07-22 16:28:02.116][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=已在主页面右半页] 
+[2026-07-22 16:28:02.116][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=已在主页面左半页] 
+[2026-07-22 16:28:02.116][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=已在崩坍之界页面] 
+[2026-07-22 16:28:02.116][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击世界树] 
+[2026-07-22 16:28:02.116][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击崩坍之界] 
+[2026-07-22 16:28:02.116][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点走未知生物] 
+[2026-07-22 16:28:02.116][TRC][Px38232][Tx7181][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:28:02.116][DBG][Px38232][Tx7181][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/close_game.json] | enter 
+[2026-07-22 16:28:02.118][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=关闭世界之外] 
+[2026-07-22 16:28:02.118][TRC][Px38232][Tx7181][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 1ms 
+[2026-07-22 16:28:02.118][DBG][Px38232][Tx7181][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/collapse_repair.json] | enter 
+[2026-07-22 16:28:02.118][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=关闭修补记录] 
+[2026-07-22 16:28:02.118][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=启动崩坍直接修补] 
+[2026-07-22 16:28:02.118][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=崩坍之界修补准备] 
+[2026-07-22 16:28:02.118][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=快速修补次数最大] 
+[2026-07-22 16:28:02.118][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=挑战次数不足] 
+[2026-07-22 16:28:02.118][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击修补裂隙] 
+[2026-07-22 16:28:02.118][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击快速修补] 
+[2026-07-22 16:28:02.118][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=确定快速修补] 
+[2026-07-22 16:28:02.118][TRC][Px38232][Tx7181][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:28:02.118][DBG][Px38232][Tx7181][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/popop.json] | enter 
+[2026-07-22 16:28:02.118][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=null] 
+[2026-07-22 16:28:02.118][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=stop] 
+[2026-07-22 16:28:02.118][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=关闭公告] 
+[2026-07-22 16:28:02.118][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=关闭活动弹窗] 
+[2026-07-22 16:28:02.119][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=果实已成熟] 
+[2026-07-22 16:28:02.119][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击空白处关闭] 
+[2026-07-22 16:28:02.119][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=返回上级页面] 
+[2026-07-22 16:28:02.119][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=返回主页面] 
+[2026-07-22 16:28:02.119][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=返回等待] 
+[2026-07-22 16:28:02.119][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=退出剧情进度popop] 
+[2026-07-22 16:28:02.119][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=退出各类页面] 
+[2026-07-22 16:28:02.119][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=退出培养成功popop] 
+[2026-07-22 16:28:02.119][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=退出获得奖励popop] 
+[2026-07-22 16:28:02.119][TRC][Px38232][Tx7181][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:28:02.119][DBG][Px38232][Tx7181][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/start_game.json] | enter 
+[2026-07-22 16:28:02.119][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=start_已在主页面] 
+[2026-07-22 16:28:02.119][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=sub_启动世外台服] 
+[2026-07-22 16:28:02.119][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=sub_启动世外官服] 
+[2026-07-22 16:28:02.119][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=下载资源中] 
+[2026-07-22 16:28:02.119][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=世界之外台服] 
+[2026-07-22 16:28:02.119][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=世界之外官服] 
+[2026-07-22 16:28:02.119][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=关闭系统更新公告] 
+[2026-07-22 16:28:02.119][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=启动世界之外] 
+[2026-07-22 16:28:02.119][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=启动再等等] 
+[2026-07-22 16:28:02.119][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=已在主页面] 
+[2026-07-22 16:28:02.119][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=更新已完成,重新登录] 
+[2026-07-22 16:28:02.119][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击开始旅程] 
+[2026-07-22 16:28:02.119][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=连接资源服务器] 
+[2026-07-22 16:28:02.119][TRC][Px38232][Tx7181][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:28:02.119][DBG][Px38232][Tx7181][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/switch_account.json] | enter 
+[2026-07-22 16:28:02.120][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=主页面切换账号] 
+[2026-07-22 16:28:02.120][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=切换账号启动] 
+[2026-07-22 16:28:02.120][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=向下找找账号] 
+[2026-07-22 16:28:02.120][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=启动切换账号] 
+[2026-07-22 16:28:02.120][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=更新已完成,重新登录_切换账号] 
+[2026-07-22 16:28:02.120][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击个人] 
+[2026-07-22 16:28:02.120][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击切换账号] 
+[2026-07-22 16:28:02.120][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击用户中心] 
+[2026-07-22 16:28:02.120][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击登录] 
+[2026-07-22 16:28:02.120][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击登录用户中心] 
+[2026-07-22 16:28:02.120][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击设置图标] 
+[2026-07-22 16:28:02.120][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击账号下拉菜单] 
+[2026-07-22 16:28:02.120][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=确认已切好账号] 
+[2026-07-22 16:28:02.120][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=选择登录账号] 
+[2026-07-22 16:28:02.120][TRC][Px38232][Tx7181][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:28:02.120][DBG][Px38232][Tx7181][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/tree.json] | enter 
+[2026-07-22 16:28:02.120][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=世界树_获取全部] 
+[2026-07-22 16:28:02.120][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=免费培养世界树] 
+[2026-07-22 16:28:02.120][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=准备收取世界树] 
+[2026-07-22 16:28:02.120][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=切换到快速培养] 
+[2026-07-22 16:28:02.120][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=启动培养世界树] 
+[2026-07-22 16:28:02.120][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=培养已达上限_免费确定] 
+[2026-07-22 16:28:02.120][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=培养已达上限_取消培养] 
+[2026-07-22 16:28:02.120][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=培养成功] 
+[2026-07-22 16:28:02.120][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=已在快速培养] 
+[2026-07-22 16:28:02.120][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=开始培养世界树] 
+[2026-07-22 16:28:02.120][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击培养20次] 
+[2026-07-22 16:28:02.120][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=确定培养] 
+[2026-07-22 16:28:02.120][TRC][Px38232][Tx7181][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:28:02.121][DBG][Px38232][Tx7181][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/tutorial.json] | enter 
+[2026-07-22 16:28:02.121][DBG][Px38232][Tx7181][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=Tutorial.Start] 
+[2026-07-22 16:28:02.121][TRC][Px38232][Tx7181][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:28:02.121][TRC][Px38232][Tx7181][PipelineResMgr.cpp][L15][MaaNS::ResourceNS::PipelineResMgr::load] | leave, 5ms 
+[2026-07-22 16:28:02.121][DBG][Px38232][Tx7181][OCRResMgr.cpp][L62][MaaNS::ResourceNS::OCRResMgr::lazy_load] [path=E:/game/maa/MaaBTWorld/resource/base/model/ocr] | enter 
+[2026-07-22 16:28:02.121][TRC][Px38232][Tx7181][OCRResMgr.cpp][L62][MaaNS::ResourceNS::OCRResMgr::lazy_load] | leave, 0ms 
+[2026-07-22 16:28:02.121][DBG][Px38232][Tx7181][TemplateResMgr.cpp][L10][MaaNS::ResourceNS::TemplateResMgr::lazy_load] [path=E:/game/maa/MaaBTWorld/resource/base/image] | enter 
+[2026-07-22 16:28:02.121][TRC][Px38232][Tx7181][TemplateResMgr.cpp][L10][MaaNS::ResourceNS::TemplateResMgr::lazy_load] | leave, 0ms 
+[2026-07-22 16:28:02.121][INF][Px38232][Tx7181][ResourceMgr.cpp][L681][MaaNS::ResourceNS::ResourceMgr::load_bundle] [path=E:/game/maa/MaaBTWorld/resource/base] [ret=true] [to_load=true] 
+[2026-07-22 16:28:02.121][TRC][Px38232][Tx7181][ResourceMgr.cpp][L636][MaaNS::ResourceNS::ResourceMgr::load_bundle] | leave, 13ms 
+[2026-07-22 16:28:02.121][INF][Px38232][Tx7181][ResourceMgr.cpp][L217][MaaNS::ResourceNS::ResourceMgr::calc_hash] [hash_cache_=ae792d7d42182808] 
+[2026-07-22 16:28:02.121][INF][Px38232][Tx7181][Utils/EventDispatcher.hpp][L65][MaaNS::EventDispatcher::notify] !!!OnEventNotify!!! [handle=true] [msg=Resource.Loading.Succeeded] [details={"hash":"ae792d7d42182808","path":"E:/game/maa/MaaBTWorld/resource/base","res_id":100000002,"type":"Bundle"}] 
+[2026-07-22 16:28:02.121][TRC][Px38232][Tx7181][ResourceMgr.cpp][L595][MaaNS::ResourceNS::ResourceMgr::run_load] | leave, 15ms 
+[2026-07-22 16:28:02.121][DBG][Px38232][Tx56789][MaaFramework.cpp][L340][MaaResourceDestroy] [res=true] | enter 
+[2026-07-22 16:28:02.121][DBG][Px38232][Tx56789][ResourceMgr.cpp][L33][MaaNS::ResourceNS::ResourceMgr::~ResourceMgr] | enter 
+[2026-07-22 16:28:02.121][TRC][Px38232][Tx56789][ResourceMgr.cpp][L33][MaaNS::ResourceNS::ResourceMgr::~ResourceMgr] | leave, 0ms 
+[2026-07-22 16:28:02.121][DBG][Px38232][Tx56789][Base/AsyncRunner.hpp][L88][MaaNS::AsyncRunner<struct MaaNS::ResourceNS::PostPathItem>::~AsyncRunner] | enter 
+[2026-07-22 16:28:02.121][DBG][Px38232][Tx56789][Base/AsyncRunner.hpp][L96][MaaNS::AsyncRunner<struct MaaNS::ResourceNS::PostPathItem>::release] | enter 
+[2026-07-22 16:28:02.122][TRC][Px38232][Tx56789][Base/AsyncRunner.hpp][L96][MaaNS::AsyncRunner<struct MaaNS::ResourceNS::PostPathItem>::release] | leave, 0ms 
+[2026-07-22 16:28:02.122][TRC][Px38232][Tx56789][Base/AsyncRunner.hpp][L88][MaaNS::AsyncRunner<struct MaaNS::ResourceNS::PostPathItem>::~AsyncRunner] | leave, 0ms 
+[2026-07-22 16:28:02.122][TRC][Px38232][Tx56789][MaaFramework.cpp][L340][MaaResourceDestroy] | leave, 0ms 
+[2026-07-22 16:28:02.214][DBG][Px38232][Tx56789][Logger] ----------------------------- 
+[2026-07-22 16:28:02.214][DBG][Px38232][Tx56789][Logger] Close log 
+[2026-07-22 16:28:02.214][DBG][Px38232][Tx56789][Logger] ----------------------------- 
+[2026-07-22 16:29:13.741][DBG][Px39244][Tx11978][Logger] ----------------------------- 
+[2026-07-22 16:29:13.741][DBG][Px39244][Tx11978][Logger] MAA Process Start 
+[2026-07-22 16:29:13.741][DBG][Px39244][Tx11978][Logger] Version v5.12.2 
+[2026-07-22 16:29:13.741][DBG][Px39244][Tx11978][Logger] Built at Jul 19 2026 14:59:13 
+[2026-07-22 16:29:13.741][DBG][Px39244][Tx11978][Logger] Windows x64 
+[2026-07-22 16:29:13.741][DBG][Px39244][Tx11978][Logger] Working E:/game/maa/MaaBTWorld 
+[2026-07-22 16:29:13.741][DBG][Px39244][Tx11978][Logger] Logging E:/game/maa/MaaBTWorld/maafw.log 
+[2026-07-22 16:29:13.741][DBG][Px39244][Tx11978][Logger] ----------------------------- 
+[2026-07-22 16:29:13.741][TRC][Px39244][Tx11978][OptionMgr.cpp][L35][MaaNS::GlobalNS::OptionMgr::set_log_dir] | leave, 0ms 
+[2026-07-22 16:29:13.741][TRC][Px39244][Tx11978][OptionMgr.cpp][L10][MaaNS::GlobalNS::OptionMgr::set_option] | leave, 0ms 
+[2026-07-22 16:29:13.741][TRC][Px39244][Tx11978][MaaFramework.cpp][L371][MaaGlobalSetOption] | leave, 0ms 
+[2026-07-22 16:29:13.783][DBG][Px39244][Tx11978][MaaFramework.cpp][L333][MaaResourceCreate] | enter 
+[2026-07-22 16:29:13.783][DBG][Px39244][Tx11978][OCRResMgr.cpp][L15][MaaNS::ResourceNS::OCRResMgr::OCRResMgr] | enter 
+[2026-07-22 16:29:13.783][TRC][Px39244][Tx11978][OCRResMgr.cpp][L15][MaaNS::ResourceNS::OCRResMgr::OCRResMgr] | leave, 0ms 
+[2026-07-22 16:29:13.798][DBG][Px39244][Tx11978][ResourceMgr.cpp][L18][MaaNS::ResourceNS::ResourceMgr::ResourceMgr] | enter 
+[2026-07-22 16:29:13.798][INF][Px39244][Tx11978][ResourceMgr.cpp][L21][MaaNS::ResourceNS::ResourceMgr::ResourceMgr] [plugin_mgr.get_names()=["//?/C:/Users/asus/.maa-tools/install/5.12.2/node_modules/@maaxyz/maa-node-win32-x64/plugins/MaaPluginDemo.dll"]] 
+[2026-07-22 16:29:13.798][INF][Px39244][Tx11978][Utils/EventDispatcher.hpp][L37][MaaNS::EventDispatcher::add_sink] [callback=true] [trans_arg=true] 
+[2026-07-22 16:29:13.798][TRC][Px39244][Tx11978][ResourceMgr.cpp][L18][MaaNS::ResourceNS::ResourceMgr::ResourceMgr] | leave, 0ms 
+[2026-07-22 16:29:13.798][TRC][Px39244][Tx11978][MaaFramework.cpp][L333][MaaResourceCreate] | leave, 15ms 
+[2026-07-22 16:29:13.798][DBG][Px39244][Tx11978][MaaResource.cpp][L124][MaaResourcePostBundle] [res=true] [path=E:\game\maa\MaaBTWorld\resource\base] | enter 
+[2026-07-22 16:29:13.799][INF][Px39244][Tx11978][ResourceMgr.cpp][L75][MaaNS::ResourceNS::ResourceMgr::post_path] [static_cast<int>(type)=0] [path=E:/game/maa/MaaBTWorld/resource/base] 
+[2026-07-22 16:29:13.799][TRC][Px39244][Tx11978][MaaResource.cpp][L124][MaaResourcePostBundle] | leave, 0ms 
+[2026-07-22 16:29:13.799][DBG][Px39244][Tx15878][ResourceMgr.cpp][L595][MaaNS::ResourceNS::ResourceMgr::run_load] [id=100000001] [static_cast<int>(item.type)=0] [item.path=E:/game/maa/MaaBTWorld/resource/base] | enter 
+[2026-07-22 16:29:13.799][INF][Px39244][Tx15878][Utils/EventDispatcher.hpp][L65][MaaNS::EventDispatcher::notify] !!!OnEventNotify!!! [handle=true] [msg=Resource.Loading.Starting] [details={"hash":"","path":"E:/game/maa/MaaBTWorld/resource/base","res_id":100000001,"type":"Bundle"}] 
+[2026-07-22 16:29:13.799][INF][Px39244][Tx15878][ResourceMgr.cpp][L372][MaaNS::ResourceNS::ResourceMgr::available_providers] [all_providers_vec=["DmlExecutionProvider","CPUExecutionProvider"]] 
+[2026-07-22 16:29:13.799][INF][Px39244][Tx15878][ResourceMgr.cpp][L400][MaaNS::ResourceNS::ResourceMgr::available_providers] [s_provider_cache=[2,1]] 
+[2026-07-22 16:29:13.799][TRC][Px39244][Tx15878][GpuOptionWin32.cpp][L137][MaaNS::perfer_gpu] 
+[2026-07-22 16:29:13.813][INF][Px39244][Tx15878][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=0] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:29:13.813][WRN][Px39244][Tx15878][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=0] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:29:13.814][INF][Px39244][Tx15878][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=1] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:29:13.814][WRN][Px39244][Tx15878][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=1] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:29:13.814][INF][Px39244][Tx15878][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=2] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:29:13.814][WRN][Px39244][Tx15878][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=2] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:29:13.814][INF][Px39244][Tx15878][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=3] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:29:13.814][WRN][Px39244][Tx15878][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=3] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:29:13.814][INF][Px39244][Tx15878][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=4] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:29:13.814][WRN][Px39244][Tx15878][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=4] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:29:13.814][INF][Px39244][Tx15878][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=5] [adapter_desc=Microsoft Basic Render Driver] 
+[2026-07-22 16:29:13.814][WRN][Px39244][Tx15878][GpuOptionWin32.cpp][L191][MaaNS::perfer_gpu] software adapter, skip [adapter_index=5] [adapter_desc=Microsoft Basic Render Driver] 
+[2026-07-22 16:29:13.814][DBG][Px39244][Tx15878][GpuOptionWin32.cpp][L173][MaaNS::perfer_gpu] EnumAdapters1 DXGI_ERROR_NOT_FOUND [adapter_index=6] 
+[2026-07-22 16:29:13.814][INF][Px39244][Tx15878][GpuOptionWin32.cpp][L236][MaaNS::perfer_gpu] no available gpu found 
+[2026-07-22 16:29:13.814][WRN][Px39244][Tx15878][ResourceMgr.cpp][L514][MaaNS::ResourceNS::ResourceMgr::use_directml] No suitable inference GPU for DirectML 
+[2026-07-22 16:29:13.814][INF][Px39244][Tx15878][ONNXResMgr.cpp][L45][MaaNS::ResourceNS::ONNXResMgr::use_cpu] 
+[2026-07-22 16:29:13.814][INF][Px39244][Tx15878][OCRResMgr.cpp][L23][MaaNS::ResourceNS::OCRResMgr::use_cpu] 
+[2026-07-22 16:29:13.814][DBG][Px39244][Tx15878][ResourceMgr.cpp][L636][MaaNS::ResourceNS::ResourceMgr::load_bundle] [path=E:/game/maa/MaaBTWorld/resource/base] | enter 
+[2026-07-22 16:29:13.814][TRC][Px39244][Tx15878][GpuOptionWin32.cpp][L137][MaaNS::perfer_gpu] 
+[2026-07-22 16:29:13.815][INF][Px39244][Tx15878][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=0] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:29:13.815][WRN][Px39244][Tx15878][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=0] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:29:13.815][INF][Px39244][Tx15878][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=1] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:29:13.815][WRN][Px39244][Tx15878][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=1] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:29:13.815][INF][Px39244][Tx15878][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=2] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:29:13.815][WRN][Px39244][Tx15878][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=2] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:29:13.815][INF][Px39244][Tx15878][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=3] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:29:13.815][WRN][Px39244][Tx15878][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=3] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:29:13.815][INF][Px39244][Tx15878][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=4] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:29:13.815][WRN][Px39244][Tx15878][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=4] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:29:13.815][INF][Px39244][Tx15878][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=5] [adapter_desc=Microsoft Basic Render Driver] 
+[2026-07-22 16:29:13.815][WRN][Px39244][Tx15878][GpuOptionWin32.cpp][L191][MaaNS::perfer_gpu] software adapter, skip [adapter_index=5] [adapter_desc=Microsoft Basic Render Driver] 
+[2026-07-22 16:29:13.815][DBG][Px39244][Tx15878][GpuOptionWin32.cpp][L173][MaaNS::perfer_gpu] EnumAdapters1 DXGI_ERROR_NOT_FOUND [adapter_index=6] 
+[2026-07-22 16:29:13.815][INF][Px39244][Tx15878][GpuOptionWin32.cpp][L236][MaaNS::perfer_gpu] no available gpu found 
+[2026-07-22 16:29:13.815][WRN][Px39244][Tx15878][ResourceMgr.cpp][L514][MaaNS::ResourceNS::ResourceMgr::use_directml] No suitable inference GPU for DirectML 
+[2026-07-22 16:29:13.815][INF][Px39244][Tx15878][ONNXResMgr.cpp][L45][MaaNS::ResourceNS::ONNXResMgr::use_cpu] 
+[2026-07-22 16:29:13.815][INF][Px39244][Tx15878][OCRResMgr.cpp][L23][MaaNS::ResourceNS::OCRResMgr::use_cpu] 
+[2026-07-22 16:29:13.815][DBG][Px39244][Tx15878][DefaultPipelineMgr.cpp][L14][MaaNS::ResourceNS::DefaultPipelineMgr::load] [path=E:/game/maa/MaaBTWorld/resource/base/default_pipeline.json] | enter 
+[2026-07-22 16:29:13.815][INF][Px39244][Tx15878][DefaultPipelineMgr.cpp][L22][MaaNS::ResourceNS::DefaultPipelineMgr::load] [json={"Click":{"action":"Click","target":true},"Default":{"post_delay":200,"pre_delay":200,"rate_limit":1000,"timeout":20000},"LongPress":{"action":"LongPress","duration":1000,"target":true},"OCR":{"order_by":"Horizontal","recognition":"OCR","replace":[],"threshold":0.3},"Swipe":{"action":"Swipe","duration":200},"TemplateMatch":{"method":5,"recognition":"TemplateMatch","threshold":0.7}}] 
+[2026-07-22 16:29:13.815][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=] 
+[2026-07-22 16:29:13.815][TRC][Px39244][Tx15878][DefaultPipelineMgr.cpp][L14][MaaNS::ResourceNS::DefaultPipelineMgr::load] | leave, 0ms 
+[2026-07-22 16:29:13.815][DBG][Px39244][Tx15878][PipelineResMgr.cpp][L15][MaaNS::ResourceNS::PipelineResMgr::load] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline] | enter 
+[2026-07-22 16:29:13.816][DBG][Px39244][Tx15878][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/base.json] | enter 
+[2026-07-22 16:29:13.816][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=前往主页面右半页] 
+[2026-07-22 16:29:13.816][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=前往主页面左半页] 
+[2026-07-22 16:29:13.816][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=已在世界树页面] 
+[2026-07-22 16:29:13.816][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=已在主页面右半页] 
+[2026-07-22 16:29:13.816][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=已在主页面左半页] 
+[2026-07-22 16:29:13.816][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=已在崩坍之界页面] 
+[2026-07-22 16:29:13.816][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击世界树] 
+[2026-07-22 16:29:13.816][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击崩坍之界] 
+[2026-07-22 16:29:13.816][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点走未知生物] 
+[2026-07-22 16:29:13.816][TRC][Px39244][Tx15878][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:29:13.816][DBG][Px39244][Tx15878][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/close_game.json] | enter 
+[2026-07-22 16:29:13.816][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=关闭世界之外] 
+[2026-07-22 16:29:13.816][TRC][Px39244][Tx15878][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:29:13.816][DBG][Px39244][Tx15878][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/collapse_repair.json] | enter 
+[2026-07-22 16:29:13.817][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=关闭修补记录] 
+[2026-07-22 16:29:13.817][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=启动崩坍直接修补] 
+[2026-07-22 16:29:13.817][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=崩坍之界修补准备] 
+[2026-07-22 16:29:13.817][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=快速修补次数最大] 
+[2026-07-22 16:29:13.817][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=挑战次数不足] 
+[2026-07-22 16:29:13.817][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击修补裂隙] 
+[2026-07-22 16:29:13.817][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击快速修补] 
+[2026-07-22 16:29:13.817][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=确定快速修补] 
+[2026-07-22 16:29:13.817][TRC][Px39244][Tx15878][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:29:13.817][DBG][Px39244][Tx15878][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/popop.json] | enter 
+[2026-07-22 16:29:13.817][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=null] 
+[2026-07-22 16:29:13.817][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=stop] 
+[2026-07-22 16:29:13.817][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=关闭公告] 
+[2026-07-22 16:29:13.817][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=关闭活动弹窗] 
+[2026-07-22 16:29:13.817][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=果实已成熟] 
+[2026-07-22 16:29:13.817][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击空白处关闭] 
+[2026-07-22 16:29:13.817][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=返回上级页面] 
+[2026-07-22 16:29:13.817][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=返回主页面] 
+[2026-07-22 16:29:13.817][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=返回等待] 
+[2026-07-22 16:29:13.817][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=退出剧情进度popop] 
+[2026-07-22 16:29:13.817][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=退出各类页面] 
+[2026-07-22 16:29:13.817][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=退出培养成功popop] 
+[2026-07-22 16:29:13.817][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=退出获得奖励popop] 
+[2026-07-22 16:29:13.817][TRC][Px39244][Tx15878][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:29:13.817][DBG][Px39244][Tx15878][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/start_game.json] | enter 
+[2026-07-22 16:29:13.818][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=start_已在主页面] 
+[2026-07-22 16:29:13.818][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=sub_启动世外台服] 
+[2026-07-22 16:29:13.818][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=sub_启动世外官服] 
+[2026-07-22 16:29:13.818][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=下载资源中] 
+[2026-07-22 16:29:13.818][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=世界之外台服] 
+[2026-07-22 16:29:13.818][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=世界之外官服] 
+[2026-07-22 16:29:13.818][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=关闭系统更新公告] 
+[2026-07-22 16:29:13.818][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=启动世界之外] 
+[2026-07-22 16:29:13.818][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=启动再等等] 
+[2026-07-22 16:29:13.818][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=已在主页面] 
+[2026-07-22 16:29:13.818][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=更新已完成,重新登录] 
+[2026-07-22 16:29:13.818][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击开始旅程] 
+[2026-07-22 16:29:13.818][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=连接资源服务器] 
+[2026-07-22 16:29:13.818][TRC][Px39244][Tx15878][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:29:13.818][DBG][Px39244][Tx15878][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/switch_account.json] | enter 
+[2026-07-22 16:29:13.818][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=主页面切换账号] 
+[2026-07-22 16:29:13.818][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=切换账号启动] 
+[2026-07-22 16:29:13.818][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=向下找找账号] 
+[2026-07-22 16:29:13.818][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=启动切换账号] 
+[2026-07-22 16:29:13.818][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=更新已完成,重新登录_切换账号] 
+[2026-07-22 16:29:13.818][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击个人] 
+[2026-07-22 16:29:13.818][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击切换账号] 
+[2026-07-22 16:29:13.818][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击用户中心] 
+[2026-07-22 16:29:13.818][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击登录] 
+[2026-07-22 16:29:13.818][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击登录用户中心] 
+[2026-07-22 16:29:13.818][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击设置图标] 
+[2026-07-22 16:29:13.818][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击账号下拉菜单] 
+[2026-07-22 16:29:13.818][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=确认已切好账号] 
+[2026-07-22 16:29:13.818][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=选择登录账号] 
+[2026-07-22 16:29:13.819][TRC][Px39244][Tx15878][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:29:13.819][DBG][Px39244][Tx15878][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/tree.json] | enter 
+[2026-07-22 16:29:13.819][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=世界树_获取全部] 
+[2026-07-22 16:29:13.819][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=免费培养世界树] 
+[2026-07-22 16:29:13.819][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=准备收取世界树] 
+[2026-07-22 16:29:13.819][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=切换到快速培养] 
+[2026-07-22 16:29:13.819][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=启动培养世界树] 
+[2026-07-22 16:29:13.819][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=培养已达上限_免费确定] 
+[2026-07-22 16:29:13.819][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=培养已达上限_取消培养] 
+[2026-07-22 16:29:13.819][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=培养成功] 
+[2026-07-22 16:29:13.819][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=已在快速培养] 
+[2026-07-22 16:29:13.819][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=开始培养世界树] 
+[2026-07-22 16:29:13.819][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击培养20次] 
+[2026-07-22 16:29:13.819][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=确定培养] 
+[2026-07-22 16:29:13.819][TRC][Px39244][Tx15878][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:29:13.819][DBG][Px39244][Tx15878][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/tutorial.json] | enter 
+[2026-07-22 16:29:13.819][DBG][Px39244][Tx15878][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=Tutorial.Start] 
+[2026-07-22 16:29:13.819][TRC][Px39244][Tx15878][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:29:13.820][TRC][Px39244][Tx15878][PipelineResMgr.cpp][L15][MaaNS::ResourceNS::PipelineResMgr::load] | leave, 4ms 
+[2026-07-22 16:29:13.820][DBG][Px39244][Tx15878][OCRResMgr.cpp][L62][MaaNS::ResourceNS::OCRResMgr::lazy_load] [path=E:/game/maa/MaaBTWorld/resource/base/model/ocr] | enter 
+[2026-07-22 16:29:13.820][TRC][Px39244][Tx15878][OCRResMgr.cpp][L62][MaaNS::ResourceNS::OCRResMgr::lazy_load] | leave, 0ms 
+[2026-07-22 16:29:13.820][DBG][Px39244][Tx15878][TemplateResMgr.cpp][L10][MaaNS::ResourceNS::TemplateResMgr::lazy_load] [path=E:/game/maa/MaaBTWorld/resource/base/image] | enter 
+[2026-07-22 16:29:13.820][TRC][Px39244][Tx15878][TemplateResMgr.cpp][L10][MaaNS::ResourceNS::TemplateResMgr::lazy_load] | leave, 0ms 
+[2026-07-22 16:29:13.820][INF][Px39244][Tx15878][ResourceMgr.cpp][L681][MaaNS::ResourceNS::ResourceMgr::load_bundle] [path=E:/game/maa/MaaBTWorld/resource/base] [ret=true] [to_load=true] 
+[2026-07-22 16:29:13.820][TRC][Px39244][Tx15878][ResourceMgr.cpp][L636][MaaNS::ResourceNS::ResourceMgr::load_bundle] | leave, 6ms 
+[2026-07-22 16:29:13.820][INF][Px39244][Tx15878][ResourceMgr.cpp][L217][MaaNS::ResourceNS::ResourceMgr::calc_hash] [hash_cache_=ae792d7d42182808] 
+[2026-07-22 16:29:13.820][INF][Px39244][Tx15878][Utils/EventDispatcher.hpp][L65][MaaNS::EventDispatcher::notify] !!!OnEventNotify!!! [handle=true] [msg=Resource.Loading.Succeeded] [details={"hash":"ae792d7d42182808","path":"E:/game/maa/MaaBTWorld/resource/base","res_id":100000001,"type":"Bundle"}] 
+[2026-07-22 16:29:13.820][TRC][Px39244][Tx15878][ResourceMgr.cpp][L595][MaaNS::ResourceNS::ResourceMgr::run_load] | leave, 21ms 
+[2026-07-22 16:29:13.820][DBG][Px39244][Tx11978][MaaFramework.cpp][L340][MaaResourceDestroy] [res=true] | enter 
+[2026-07-22 16:29:13.820][DBG][Px39244][Tx11978][ResourceMgr.cpp][L33][MaaNS::ResourceNS::ResourceMgr::~ResourceMgr] | enter 
+[2026-07-22 16:29:13.820][TRC][Px39244][Tx11978][ResourceMgr.cpp][L33][MaaNS::ResourceNS::ResourceMgr::~ResourceMgr] | leave, 0ms 
+[2026-07-22 16:29:13.820][DBG][Px39244][Tx11978][Base/AsyncRunner.hpp][L88][MaaNS::AsyncRunner<struct MaaNS::ResourceNS::PostPathItem>::~AsyncRunner] | enter 
+[2026-07-22 16:29:13.820][DBG][Px39244][Tx11978][Base/AsyncRunner.hpp][L96][MaaNS::AsyncRunner<struct MaaNS::ResourceNS::PostPathItem>::release] | enter 
+[2026-07-22 16:29:13.822][TRC][Px39244][Tx11978][Base/AsyncRunner.hpp][L96][MaaNS::AsyncRunner<struct MaaNS::ResourceNS::PostPathItem>::release] | leave, 0ms 
+[2026-07-22 16:29:13.822][TRC][Px39244][Tx11978][Base/AsyncRunner.hpp][L88][MaaNS::AsyncRunner<struct MaaNS::ResourceNS::PostPathItem>::~AsyncRunner] | leave, 0ms 
+[2026-07-22 16:29:13.822][TRC][Px39244][Tx11978][MaaFramework.cpp][L340][MaaResourceDestroy] | leave, 0ms 
+[2026-07-22 16:29:13.822][DBG][Px39244][Tx11978][MaaFramework.cpp][L333][MaaResourceCreate] | enter 
+[2026-07-22 16:29:13.822][DBG][Px39244][Tx11978][OCRResMgr.cpp][L15][MaaNS::ResourceNS::OCRResMgr::OCRResMgr] | enter 
+[2026-07-22 16:29:13.822][TRC][Px39244][Tx11978][OCRResMgr.cpp][L15][MaaNS::ResourceNS::OCRResMgr::OCRResMgr] | leave, 0ms 
+[2026-07-22 16:29:13.822][DBG][Px39244][Tx11978][ResourceMgr.cpp][L18][MaaNS::ResourceNS::ResourceMgr::ResourceMgr] | enter 
+[2026-07-22 16:29:13.822][INF][Px39244][Tx11978][ResourceMgr.cpp][L21][MaaNS::ResourceNS::ResourceMgr::ResourceMgr] [plugin_mgr.get_names()=["//?/C:/Users/asus/.maa-tools/install/5.12.2/node_modules/@maaxyz/maa-node-win32-x64/plugins/MaaPluginDemo.dll"]] 
+[2026-07-22 16:29:13.822][INF][Px39244][Tx11978][Utils/EventDispatcher.hpp][L37][MaaNS::EventDispatcher::add_sink] [callback=true] [trans_arg=true] 
+[2026-07-22 16:29:13.822][TRC][Px39244][Tx11978][ResourceMgr.cpp][L18][MaaNS::ResourceNS::ResourceMgr::ResourceMgr] | leave, 0ms 
+[2026-07-22 16:29:13.822][TRC][Px39244][Tx11978][MaaFramework.cpp][L333][MaaResourceCreate] | leave, 0ms 
+[2026-07-22 16:29:13.822][DBG][Px39244][Tx11978][MaaResource.cpp][L124][MaaResourcePostBundle] [res=true] [path=E:\game\maa\MaaBTWorld\resource\base] | enter 
+[2026-07-22 16:29:13.822][INF][Px39244][Tx11978][ResourceMgr.cpp][L75][MaaNS::ResourceNS::ResourceMgr::post_path] [static_cast<int>(type)=0] [path=E:/game/maa/MaaBTWorld/resource/base] 
+[2026-07-22 16:29:13.822][TRC][Px39244][Tx11978][MaaResource.cpp][L124][MaaResourcePostBundle] | leave, 0ms 
+[2026-07-22 16:29:13.822][DBG][Px39244][Tx30185][ResourceMgr.cpp][L595][MaaNS::ResourceNS::ResourceMgr::run_load] [id=100000002] [static_cast<int>(item.type)=0] [item.path=E:/game/maa/MaaBTWorld/resource/base] | enter 
+[2026-07-22 16:29:13.822][INF][Px39244][Tx30185][Utils/EventDispatcher.hpp][L65][MaaNS::EventDispatcher::notify] !!!OnEventNotify!!! [handle=true] [msg=Resource.Loading.Starting] [details={"hash":"","path":"E:/game/maa/MaaBTWorld/resource/base","res_id":100000002,"type":"Bundle"}] 
+[2026-07-22 16:29:13.822][TRC][Px39244][Tx30185][GpuOptionWin32.cpp][L137][MaaNS::perfer_gpu] 
+[2026-07-22 16:29:13.823][INF][Px39244][Tx30185][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=0] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:29:13.823][WRN][Px39244][Tx30185][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=0] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:29:13.823][INF][Px39244][Tx30185][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=1] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:29:13.823][WRN][Px39244][Tx30185][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=1] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:29:13.823][INF][Px39244][Tx30185][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=2] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:29:13.823][WRN][Px39244][Tx30185][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=2] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:29:13.823][INF][Px39244][Tx30185][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=3] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:29:13.823][WRN][Px39244][Tx30185][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=3] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:29:13.823][INF][Px39244][Tx30185][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=4] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:29:13.823][WRN][Px39244][Tx30185][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=4] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:29:13.823][INF][Px39244][Tx30185][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=5] [adapter_desc=Microsoft Basic Render Driver] 
+[2026-07-22 16:29:13.823][WRN][Px39244][Tx30185][GpuOptionWin32.cpp][L191][MaaNS::perfer_gpu] software adapter, skip [adapter_index=5] [adapter_desc=Microsoft Basic Render Driver] 
+[2026-07-22 16:29:13.823][DBG][Px39244][Tx30185][GpuOptionWin32.cpp][L173][MaaNS::perfer_gpu] EnumAdapters1 DXGI_ERROR_NOT_FOUND [adapter_index=6] 
+[2026-07-22 16:29:13.823][INF][Px39244][Tx30185][GpuOptionWin32.cpp][L236][MaaNS::perfer_gpu] no available gpu found 
+[2026-07-22 16:29:13.823][WRN][Px39244][Tx30185][ResourceMgr.cpp][L514][MaaNS::ResourceNS::ResourceMgr::use_directml] No suitable inference GPU for DirectML 
+[2026-07-22 16:29:13.823][INF][Px39244][Tx30185][ONNXResMgr.cpp][L45][MaaNS::ResourceNS::ONNXResMgr::use_cpu] 
+[2026-07-22 16:29:13.823][INF][Px39244][Tx30185][OCRResMgr.cpp][L23][MaaNS::ResourceNS::OCRResMgr::use_cpu] 
+[2026-07-22 16:29:13.823][DBG][Px39244][Tx30185][ResourceMgr.cpp][L636][MaaNS::ResourceNS::ResourceMgr::load_bundle] [path=E:/game/maa/MaaBTWorld/resource/base] | enter 
+[2026-07-22 16:29:13.823][TRC][Px39244][Tx30185][GpuOptionWin32.cpp][L137][MaaNS::perfer_gpu] 
+[2026-07-22 16:29:13.823][INF][Px39244][Tx30185][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=0] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:29:13.823][WRN][Px39244][Tx30185][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=0] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:29:13.823][INF][Px39244][Tx30185][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=1] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:29:13.823][WRN][Px39244][Tx30185][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=1] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:29:13.824][INF][Px39244][Tx30185][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=2] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:29:13.824][WRN][Px39244][Tx30185][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=2] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:29:13.824][INF][Px39244][Tx30185][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=3] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:29:13.824][WRN][Px39244][Tx30185][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=3] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:29:13.824][INF][Px39244][Tx30185][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=4] [adapter_desc=Intel(R) Arc(TM) Graphics] 
+[2026-07-22 16:29:13.824][WRN][Px39244][Tx30185][GpuOptionWin32.cpp][L195][MaaNS::perfer_gpu] adapter has less than 2GB video memory, skip [adapter_index=4] [adapter_desc=Intel(R) Arc(TM) Graphics] [desc.DedicatedVideoMemory=134217728] 
+[2026-07-22 16:29:13.824][INF][Px39244][Tx30185][GpuOptionWin32.cpp][L188][MaaNS::perfer_gpu] [adapter_index=5] [adapter_desc=Microsoft Basic Render Driver] 
+[2026-07-22 16:29:13.824][WRN][Px39244][Tx30185][GpuOptionWin32.cpp][L191][MaaNS::perfer_gpu] software adapter, skip [adapter_index=5] [adapter_desc=Microsoft Basic Render Driver] 
+[2026-07-22 16:29:13.824][DBG][Px39244][Tx30185][GpuOptionWin32.cpp][L173][MaaNS::perfer_gpu] EnumAdapters1 DXGI_ERROR_NOT_FOUND [adapter_index=6] 
+[2026-07-22 16:29:13.824][INF][Px39244][Tx30185][GpuOptionWin32.cpp][L236][MaaNS::perfer_gpu] no available gpu found 
+[2026-07-22 16:29:13.824][WRN][Px39244][Tx30185][ResourceMgr.cpp][L514][MaaNS::ResourceNS::ResourceMgr::use_directml] No suitable inference GPU for DirectML 
+[2026-07-22 16:29:13.824][INF][Px39244][Tx30185][ONNXResMgr.cpp][L45][MaaNS::ResourceNS::ONNXResMgr::use_cpu] 
+[2026-07-22 16:29:13.824][INF][Px39244][Tx30185][OCRResMgr.cpp][L23][MaaNS::ResourceNS::OCRResMgr::use_cpu] 
+[2026-07-22 16:29:13.824][DBG][Px39244][Tx30185][DefaultPipelineMgr.cpp][L14][MaaNS::ResourceNS::DefaultPipelineMgr::load] [path=E:/game/maa/MaaBTWorld/resource/base/default_pipeline.json] | enter 
+[2026-07-22 16:29:13.824][INF][Px39244][Tx30185][DefaultPipelineMgr.cpp][L22][MaaNS::ResourceNS::DefaultPipelineMgr::load] [json={"Click":{"action":"Click","target":true},"Default":{"post_delay":200,"pre_delay":200,"rate_limit":1000,"timeout":20000},"LongPress":{"action":"LongPress","duration":1000,"target":true},"OCR":{"order_by":"Horizontal","recognition":"OCR","replace":[],"threshold":0.3},"Swipe":{"action":"Swipe","duration":200},"TemplateMatch":{"method":5,"recognition":"TemplateMatch","threshold":0.7}}] 
+[2026-07-22 16:29:13.824][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=] 
+[2026-07-22 16:29:13.826][TRC][Px39244][Tx30185][DefaultPipelineMgr.cpp][L14][MaaNS::ResourceNS::DefaultPipelineMgr::load] | leave, 0ms 
+[2026-07-22 16:29:13.826][DBG][Px39244][Tx30185][PipelineResMgr.cpp][L15][MaaNS::ResourceNS::PipelineResMgr::load] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline] | enter 
+[2026-07-22 16:29:13.826][DBG][Px39244][Tx30185][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/base.json] | enter 
+[2026-07-22 16:29:13.826][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=前往主页面右半页] 
+[2026-07-22 16:29:13.826][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=前往主页面左半页] 
+[2026-07-22 16:29:13.826][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=已在世界树页面] 
+[2026-07-22 16:29:13.826][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=已在主页面右半页] 
+[2026-07-22 16:29:13.826][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=已在主页面左半页] 
+[2026-07-22 16:29:13.826][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=已在崩坍之界页面] 
+[2026-07-22 16:29:13.826][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击世界树] 
+[2026-07-22 16:29:13.826][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击崩坍之界] 
+[2026-07-22 16:29:13.826][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点走未知生物] 
+[2026-07-22 16:29:13.826][TRC][Px39244][Tx30185][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:29:13.826][DBG][Px39244][Tx30185][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/close_game.json] | enter 
+[2026-07-22 16:29:13.826][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=关闭世界之外] 
+[2026-07-22 16:29:13.826][TRC][Px39244][Tx30185][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:29:13.827][DBG][Px39244][Tx30185][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/collapse_repair.json] | enter 
+[2026-07-22 16:29:13.827][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=关闭修补记录] 
+[2026-07-22 16:29:13.827][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=启动崩坍直接修补] 
+[2026-07-22 16:29:13.827][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=崩坍之界修补准备] 
+[2026-07-22 16:29:13.827][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=快速修补次数最大] 
+[2026-07-22 16:29:13.827][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=挑战次数不足] 
+[2026-07-22 16:29:13.827][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击修补裂隙] 
+[2026-07-22 16:29:13.827][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击快速修补] 
+[2026-07-22 16:29:13.827][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=确定快速修补] 
+[2026-07-22 16:29:13.827][TRC][Px39244][Tx30185][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:29:13.827][DBG][Px39244][Tx30185][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/popop.json] | enter 
+[2026-07-22 16:29:13.827][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=null] 
+[2026-07-22 16:29:13.827][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=stop] 
+[2026-07-22 16:29:13.827][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=关闭公告] 
+[2026-07-22 16:29:13.827][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=关闭活动弹窗] 
+[2026-07-22 16:29:13.827][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=果实已成熟] 
+[2026-07-22 16:29:13.827][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击空白处关闭] 
+[2026-07-22 16:29:13.827][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=返回上级页面] 
+[2026-07-22 16:29:13.827][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=返回主页面] 
+[2026-07-22 16:29:13.827][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=返回等待] 
+[2026-07-22 16:29:13.827][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=退出剧情进度popop] 
+[2026-07-22 16:29:13.827][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=退出各类页面] 
+[2026-07-22 16:29:13.827][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=退出培养成功popop] 
+[2026-07-22 16:29:13.827][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=退出获得奖励popop] 
+[2026-07-22 16:29:13.828][TRC][Px39244][Tx30185][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:29:13.828][DBG][Px39244][Tx30185][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/start_game.json] | enter 
+[2026-07-22 16:29:13.828][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=start_已在主页面] 
+[2026-07-22 16:29:13.828][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=sub_启动世外台服] 
+[2026-07-22 16:29:13.828][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=sub_启动世外官服] 
+[2026-07-22 16:29:13.828][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=下载资源中] 
+[2026-07-22 16:29:13.828][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=世界之外台服] 
+[2026-07-22 16:29:13.828][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=世界之外官服] 
+[2026-07-22 16:29:13.828][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=关闭系统更新公告] 
+[2026-07-22 16:29:13.828][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=启动世界之外] 
+[2026-07-22 16:29:13.828][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=启动再等等] 
+[2026-07-22 16:29:13.828][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=已在主页面] 
+[2026-07-22 16:29:13.828][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=更新已完成,重新登录] 
+[2026-07-22 16:29:13.828][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击开始旅程] 
+[2026-07-22 16:29:13.828][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=连接资源服务器] 
+[2026-07-22 16:29:13.828][TRC][Px39244][Tx30185][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:29:13.828][DBG][Px39244][Tx30185][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/switch_account.json] | enter 
+[2026-07-22 16:29:13.828][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=主页面切换账号] 
+[2026-07-22 16:29:13.828][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=切换账号启动] 
+[2026-07-22 16:29:13.828][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=向下找找账号] 
+[2026-07-22 16:29:13.828][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=启动切换账号] 
+[2026-07-22 16:29:13.828][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=更新已完成,重新登录_切换账号] 
+[2026-07-22 16:29:13.828][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击个人] 
+[2026-07-22 16:29:13.828][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击切换账号] 
+[2026-07-22 16:29:13.828][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击用户中心] 
+[2026-07-22 16:29:13.828][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击登录] 
+[2026-07-22 16:29:13.828][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击登录用户中心] 
+[2026-07-22 16:29:13.828][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击设置图标] 
+[2026-07-22 16:29:13.829][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击账号下拉菜单] 
+[2026-07-22 16:29:13.829][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=确认已切好账号] 
+[2026-07-22 16:29:13.829][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=选择登录账号] 
+[2026-07-22 16:29:13.829][TRC][Px39244][Tx30185][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:29:13.829][DBG][Px39244][Tx30185][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/tree.json] | enter 
+[2026-07-22 16:29:13.829][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=世界树_获取全部] 
+[2026-07-22 16:29:13.829][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=免费培养世界树] 
+[2026-07-22 16:29:13.829][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=准备收取世界树] 
+[2026-07-22 16:29:13.829][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=切换到快速培养] 
+[2026-07-22 16:29:13.829][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=启动培养世界树] 
+[2026-07-22 16:29:13.829][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=培养已达上限_免费确定] 
+[2026-07-22 16:29:13.829][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=培养已达上限_取消培养] 
+[2026-07-22 16:29:13.829][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=培养成功] 
+[2026-07-22 16:29:13.829][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=已在快速培养] 
+[2026-07-22 16:29:13.829][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=开始培养世界树] 
+[2026-07-22 16:29:13.829][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=点击培养20次] 
+[2026-07-22 16:29:13.829][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=确定培养] 
+[2026-07-22 16:29:13.829][TRC][Px39244][Tx30185][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:29:13.829][DBG][Px39244][Tx30185][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] [path=E:/game/maa/MaaBTWorld/resource/base/pipeline/tutorial.json] | enter 
+[2026-07-22 16:29:13.829][DBG][Px39244][Tx30185][PipelineParser.cpp][L188][MaaNS::ResourceNS::PipelineParser::parse_node] [name=Tutorial.Start] 
+[2026-07-22 16:29:13.829][TRC][Px39244][Tx30185][PipelineResMgr.cpp][L110][MaaNS::ResourceNS::PipelineResMgr::open_and_parse_file] | leave, 0ms 
+[2026-07-22 16:29:13.829][TRC][Px39244][Tx30185][PipelineResMgr.cpp][L15][MaaNS::ResourceNS::PipelineResMgr::load] | leave, 4ms 
+[2026-07-22 16:29:13.829][DBG][Px39244][Tx30185][OCRResMgr.cpp][L62][MaaNS::ResourceNS::OCRResMgr::lazy_load] [path=E:/game/maa/MaaBTWorld/resource/base/model/ocr] | enter 
+[2026-07-22 16:29:13.831][TRC][Px39244][Tx30185][OCRResMgr.cpp][L62][MaaNS::ResourceNS::OCRResMgr::lazy_load] | leave, 0ms 
+[2026-07-22 16:29:13.831][DBG][Px39244][Tx30185][TemplateResMgr.cpp][L10][MaaNS::ResourceNS::TemplateResMgr::lazy_load] [path=E:/game/maa/MaaBTWorld/resource/base/image] | enter 
+[2026-07-22 16:29:13.831][TRC][Px39244][Tx30185][TemplateResMgr.cpp][L10][MaaNS::ResourceNS::TemplateResMgr::lazy_load] | leave, 0ms 
+[2026-07-22 16:29:13.831][INF][Px39244][Tx30185][ResourceMgr.cpp][L681][MaaNS::ResourceNS::ResourceMgr::load_bundle] [path=E:/game/maa/MaaBTWorld/resource/base] [ret=true] [to_load=true] 
+[2026-07-22 16:29:13.831][TRC][Px39244][Tx30185][ResourceMgr.cpp][L636][MaaNS::ResourceNS::ResourceMgr::load_bundle] | leave, 6ms 
+[2026-07-22 16:29:13.831][INF][Px39244][Tx30185][ResourceMgr.cpp][L217][MaaNS::ResourceNS::ResourceMgr::calc_hash] [hash_cache_=ae792d7d42182808] 
+[2026-07-22 16:29:13.831][INF][Px39244][Tx30185][Utils/EventDispatcher.hpp][L65][MaaNS::EventDispatcher::notify] !!!OnEventNotify!!! [handle=true] [msg=Resource.Loading.Succeeded] [details={"hash":"ae792d7d42182808","path":"E:/game/maa/MaaBTWorld/resource/base","res_id":100000002,"type":"Bundle"}] 
+[2026-07-22 16:29:13.831][TRC][Px39244][Tx30185][ResourceMgr.cpp][L595][MaaNS::ResourceNS::ResourceMgr::run_load] | leave, 8ms 
+[2026-07-22 16:29:13.831][DBG][Px39244][Tx11978][MaaFramework.cpp][L340][MaaResourceDestroy] [res=true] | enter 
+[2026-07-22 16:29:13.831][DBG][Px39244][Tx11978][ResourceMgr.cpp][L33][MaaNS::ResourceNS::ResourceMgr::~ResourceMgr] | enter 
+[2026-07-22 16:29:13.831][TRC][Px39244][Tx11978][ResourceMgr.cpp][L33][MaaNS::ResourceNS::ResourceMgr::~ResourceMgr] | leave, 0ms 
+[2026-07-22 16:29:13.831][DBG][Px39244][Tx11978][Base/AsyncRunner.hpp][L88][MaaNS::AsyncRunner<struct MaaNS::ResourceNS::PostPathItem>::~AsyncRunner] | enter 
+[2026-07-22 16:29:13.831][DBG][Px39244][Tx11978][Base/AsyncRunner.hpp][L96][MaaNS::AsyncRunner<struct MaaNS::ResourceNS::PostPathItem>::release] | enter 
+[2026-07-22 16:29:13.831][TRC][Px39244][Tx11978][Base/AsyncRunner.hpp][L96][MaaNS::AsyncRunner<struct MaaNS::ResourceNS::PostPathItem>::release] | leave, 0ms 
+[2026-07-22 16:29:13.831][TRC][Px39244][Tx11978][Base/AsyncRunner.hpp][L88][MaaNS::AsyncRunner<struct MaaNS::ResourceNS::PostPathItem>::~AsyncRunner] | leave, 0ms 
+[2026-07-22 16:29:13.831][TRC][Px39244][Tx11978][MaaFramework.cpp][L340][MaaResourceDestroy] | leave, 0ms 
+[2026-07-22 16:29:13.833][DBG][Px39244][Tx11978][Logger] ----------------------------- 
+[2026-07-22 16:29:13.833][DBG][Px39244][Tx11978][Logger] Close log 
+[2026-07-22 16:29:13.833][DBG][Px39244][Tx11978][Logger] ----------------------------- 

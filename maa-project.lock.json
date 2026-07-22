@@ -159,7 +159,9 @@
             "templateHash": "68ca3fba3b7e864770cb61aeb306d4bd4354b68ab4dd38450860c5d823e42a53"
         },
         ".prettierrc.mjs": {
-            "hash": "1373a409da8add16690b95000ad26ad2c96f8498cc2db4e4a27ad182286acef7",
+            "acceptedAt": "2026-07-22T08:06:53.111Z",
+            "acceptedBy": "create-maa-project@0.1.0",
+            "hash": "e6bc1bcb0dd3a4f6e9e9567d5b1129b11b0a2d28b0853f1fdae6d8c9b10f8562",
             "templateHash": "1373a409da8add16690b95000ad26ad2c96f8498cc2db4e4a27ad182286acef7"
         },
         ".python-version": {
@@ -179,7 +181,7 @@
             "templateHash": "cd70431999a5d6f655684bc3ed978bc5e0e796515d245fe2333eb5dba6be63f8"
         },
         "agent/bootstrap.py": {
-            "hash": "1bfb44bbe7d042505a640c34144d794e113926a8a444371090af9f9d0b737628",
+            "hash": "83c54ddcc7806c252188637596e43a5e7810843bb50db8e59a112f8b29b9ee13",
             "templateHash": "1bfb44bbe7d042505a640c34144d794e113926a8a444371090af9f9d0b737628"
         },
         "agent/custom/__init__.py": {
@@ -243,7 +245,9 @@
             "templateHash": "2b307babe4995339d18a37cfe255b56a10ddf9f514ee4928ba024a343ac1f7a2"
         },
         "tools/build-release.mjs": {
-            "hash": "2683eb0f2e1dc4b0888a0a15e6229c942de199afc9aadde053ae0d93f560933d",
+            "acceptedAt": "2026-07-22T08:09:35.639Z",
+            "acceptedBy": "create-maa-project@0.1.0",
+            "hash": "725bb57233f1a89a5706b8558cd19be3612732060b8f14c09c398d3eb564b6d9",
             "templateHash": "2683eb0f2e1dc4b0888a0a15e6229c942de199afc9aadde053ae0d93f560933d"
         },
         "tools/check-project.mjs": {
