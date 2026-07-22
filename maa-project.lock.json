@@ -239,7 +239,7 @@
             "templateHash": "34a54bf8c1deefca4f52518b8f588bd61b28491ca50ab25af8dfcde35c2afe37"
         },
         "requirements.txt": {
-            "hash": "2b307babe4995339d18a37cfe255b56a10ddf9f514ee4928ba024a343ac1f7a2",
+            "hash": "3c81dbabb8d6504923e0721b1f850e0ef9b85ea70eddc05f90c59a777445eb9c",
             "templateHash": "2b307babe4995339d18a37cfe255b56a10ddf9f514ee4928ba024a343ac1f7a2"
         },
         "tools/build-release.mjs": {
@@ -287,17 +287,11 @@
             "templateHash": "9675457bbfe1f6fdf9f082452cd6f348b7f62a58c8f3d7c42053e8e3673956b9"
         },
         "uv.lock": {
-            "hash": "e9c645aa591f1344d397e72e17daa2e20a4ed4b2c503cc7e28b26b518067664f",
+            "hash": "22d73badba88a48471ac5ebc161ae186a7a7d5b0ce92a2b0e7e2a65e99986899",
             "templateHash": "e9c645aa591f1344d397e72e17daa2e20a4ed4b2c503cc7e28b26b518067664f"
         }
     },
-    "pending": [
-        {
-            "command": "create-maa-project --update python-deps",
-            "kind": "python-deps",
-            "reason": "Agent dependencies are managed by uv and need to be synchronized locally."
-        }
-    ],
+    "pending": [],
     "schemaVersion": 2,
     "template": {
         "createdBy": "create-maa-project",
