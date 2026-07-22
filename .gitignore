@@ -8,3 +8,4 @@ dist/
 debug/
 .create-maa-project/
 # END create-maa-project
+maafw.log
