@@ -1,0 +1,44 @@
+{
+    "interface_version": 2,
+    "name": "maabtworld",
+    "label": "MaaBTWorld",
+    "version": "v0.1.0",
+    "icon": "logo.ico",
+    "description": "MaaBTWorld MaaFW project",
+    "controller": [
+        {
+            "name": "ADB模拟器",
+            "label": "ADB模拟器",
+            "type": "Adb",
+            "display_short_side": 720
+        },
+        {
+            "name": "PlayCover",
+            "label": "PlayCover",
+            "type": "PlayCover",
+            "display_short_side": 720
+        }
+    ],
+    "resource": [
+        {
+            "name": "base",
+            "label": "Base",
+            "path": [
+                "./resource/base"
+            ]
+        }
+    ],
+    "import": [
+        "tasks/StartUp.json"
+    ],
+    "agent": [
+        {
+            "child_exec": "uv",
+            "child_args": [
+                "run",
+                "python",
+                "agent/bootstrap.py"
+            ]
+        }
+    ]
+}

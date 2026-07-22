@@ -1,0 +1,43 @@
+[project]
+name = "maabtworld"
+version = "0.1.0"
+description = "MaaBTWorld MaaFW Agent project"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "loguru",
+    "maafw>=5.0",
+]
+
+[dependency-groups]
+dev = [
+    "pyright>=1.1.400",
+    "ruff>=0.11.0"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["agent"]
+
+[tool.ruff]
+target-version = "py313"
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pyright]
+include = ["agent", "tools"]
+extraPaths = ["agent"]
+pythonVersion = "3.13"
+typeCheckingMode = "strict"
+
+# MaaFramework 的 Python 包 (MaaFw) 不发布 PEP 561 类型存根；strict 模式下 Unknown 类型会从 maa 调用向外传播，这里统一抑制。
+reportMissingTypeStubs = "none"
+reportUnknownMemberType = "none"
+reportUnknownArgumentType = "none"
+reportUnknownVariableType = "none"
+reportUnknownParameterType = "none"
+reportUnknownLambdaType = "none"
