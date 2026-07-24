@@ -210,7 +210,6 @@ Universal pipeline 使用 v2 格式，recognition 和 action 放入二级字典�
 | `TeleportButton`           | 右下角传送按钮                  |
 | `CloseRewardsButton`       | 奖励界面对号关闭                |
 
-
 ### Custom 节点
 
 - `SubTask`：顺序执行子任务列表。

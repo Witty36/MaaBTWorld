@@ -31,6 +31,7 @@ DEFAULT_SCREEN_W, DEFAULT_SCREEN_H = 720, 1280
 # 项目根目录：脚本位于 .claude/skills/pipeline-generate/generate_node.py
 PROJECT_ROOT = None
 
+
 def find_project_root() -> Path:
     env_root = os.getenv("MAAHUB_ROOT") or os.getenv("PROJECT_ROOT")
     if env_root:
@@ -84,6 +85,7 @@ def resolve_pipeline_path(pipeline_file: str) -> Path:
 
 def connect_device():
     from maa_mcp.adb import find_adb_device_list, connect_adb_device
+
     devices = find_adb_device_list()
     if not devices:
         raise RuntimeError("未找到 ADB 设备，请启动模拟器或打开 USB 调试")
@@ -111,10 +113,7 @@ def find_target_box(controller_id, target_text):
 
     matched = [r for r in results if target_text in (_val(r, "text") or "")]
     if not matched:
-        raise RuntimeError(
-            f"OCR 未在屏幕找到 '{target_text}'\n"
-            f"请确认游戏窗口在前台，且该文字当前可见"
-        )
+        raise RuntimeError(f"OCR 未在屏幕找到 '{target_text}'\n请确认游戏窗口在前台，且该文字当前可见")
 
     # 多匹配提示
     if len(matched) > 1:
@@ -156,9 +155,7 @@ def merge_into_pipeline(pipeline_file, node_name, node_config, overwrite):
     existing = existing or {}
 
     if node_name in existing and not overwrite:
-        raise RuntimeError(
-            f"节点 '{node_name}' 已存在，加 --overwrite 参数才能覆盖"
-        )
+        raise RuntimeError(f"节点 '{node_name}' 已存在，加 --overwrite 参数才能覆盖")
 
     existing[node_name] = node_config
     result = save_pipeline(
@@ -172,21 +169,32 @@ def merge_into_pipeline(pipeline_file, node_name, node_config, overwrite):
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="自动生成 Pipeline OCR 文本节点 (3 步工作流)"
-    )
+    parser = argparse.ArgumentParser(description="自动生成 Pipeline OCR 文本节点 (3 步工作流)")
     parser.add_argument("target_text", help="目标文字")
     parser.add_argument("node_name", help="节点名 (PascalCase)")
     parser.add_argument("pipeline_file", help="目标 pipeline 路径")
     parser.add_argument(
-        "--action", default="Click",
+        "--action",
+        default="Click",
         choices=["Click", "DoNothing", "LongPress", "Swipe", "ClickKey", "InputText"],
     )
-    parser.add_argument("--expand", type=int, default=20, help="ROI 扩边像素（推荐 20-30，可先用 generate_sweep.py 测试）")
+    parser.add_argument(
+        "--expand", type=int, default=20, help="ROI 扩边像素（推荐 20-30，可先用 generate_sweep.py 测试）"
+    )
     parser.add_argument("--post-delay", type=int, default=500)
     parser.add_argument("--timeout", type=int, default=2000)
-    parser.add_argument("--screen-width", type=int, default=None, help="屏幕宽度（默认 720，可通过环境变量 SCREEN_WIDTH 或 SCREEN_SIZE 读取）")
-    parser.add_argument("--screen-height", type=int, default=None, help="屏幕高度（默认 1280，可通过环境变量 SCREEN_HEIGHT 或 SCREEN_SIZE 读取）")
+    parser.add_argument(
+        "--screen-width",
+        type=int,
+        default=None,
+        help="屏幕宽度（默认 720，可通过环境变量 SCREEN_WIDTH 或 SCREEN_SIZE 读取）",
+    )
+    parser.add_argument(
+        "--screen-height",
+        type=int,
+        default=None,
+        help="屏幕高度（默认 1280，可通过环境变量 SCREEN_HEIGHT 或 SCREEN_SIZE 读取）",
+    )
     parser.add_argument("--overwrite", action="store_true")
     args = parser.parse_args()
 
