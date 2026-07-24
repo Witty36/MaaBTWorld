@@ -9,3 +9,6 @@ debug/
 .create-maa-project/
 # END create-maa-project
 maafw.log
+
+.claude/*
+!.claude/skills
