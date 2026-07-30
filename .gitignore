@@ -22,3 +22,6 @@ maafw.log
 
 # node 相关
 .pnpm-store/
+
+# create-maa-project 锁文件（不再使用）
+maa-project.lock.json
