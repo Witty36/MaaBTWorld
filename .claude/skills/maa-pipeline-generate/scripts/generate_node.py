@@ -1,5 +1,5 @@
 """
-pipeline-generate: 自动生成 OCR 文本节点并合并到指定 pipeline。
+maa-pipeline-generate: 自动生成 OCR 文本节点并合并到指定 pipeline。
 
 3 步工作流:
 1. 连接 ADB 设备
@@ -28,7 +28,7 @@ if sys.platform == "win32":
 # 默认基准分辨率
 DEFAULT_SCREEN_W, DEFAULT_SCREEN_H = 720, 1280
 
-# 项目根目录：脚本位于 .claude/skills/pipeline-generate/generate_node.py
+# 目标项目根目录。脚本可能安装在用户级或插件缓存中，不能从脚本路径反推目标项目。
 PROJECT_ROOT = None
 
 def find_project_root() -> Path:
@@ -36,10 +36,15 @@ def find_project_root() -> Path:
     if env_root:
         return Path(env_root).resolve()
 
-    current = Path(__file__).resolve().parent
-    for parent in [current, *current.parents]:
-        if (parent / ".git").exists() or (parent / "package.json").exists() or (parent / "README.md").exists():
-            return parent
+    current = Path.cwd().resolve()
+    for candidate in [current, *current.parents]:
+        if (candidate / "assets" / "interface.json").exists():
+            return candidate
+        if (candidate / "interface.json").exists():
+            return candidate.parent if candidate.name == "assets" else candidate
+
+    if (current / ".git").exists():
+        return current
 
     raise RuntimeError("无法定位项目根目录，请设置 MAAHUB_ROOT 或 PROJECT_ROOT 环境变量")
 
@@ -78,7 +83,7 @@ def resolve_pipeline_path(pipeline_file: str) -> Path:
     cwd_candidate = Path.cwd() / path
     if cwd_candidate.exists():
         return cwd_candidate
-    # 2. 再试 PROJECT_ROOT（脚本所在位置的 4 级父目录）
+    # 2. 再试显式发现的目标项目根目录
     return PROJECT_ROOT / "assets" / "resource" / "base" / "pipeline" / pipeline_file
 
 
@@ -231,7 +236,7 @@ def main():
     print(f"扩大 ROI: {roi}")
     print(f"节点 {args.node_name} 已合并到 {path.name}")
     print("=" * 50)
-    print("\n建议运行 /pipeline-testing 验证节点稳定性")
+    print("\n建议使用 maa-pipeline-testing 验证节点稳定性")
 
 
 if __name__ == "__main__":

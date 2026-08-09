@@ -9,12 +9,12 @@ description: "Add runtime UI options (select/checkbox/switch/input) to interface
 
 新增一个 UI 选项需要**同时**改 3 个地方，缺一不可：
 
-| #   | 位置                                                   | 内容                                                                      |
-| --- | ------------------------------------------------------ | ------------------------------------------------------------------------- |
-| 1   | `assets/interface.json` 的 `option` 字典               | 选项定义（type / cases / pipeline_override）                              |
-| 2   | `assets/interface.json` 对应 task 的 `option: []` 数组 | 注册到具体任务（否则 UI 上看不到）                                        |
-| 3   | `assets/resource/base/pipeline/*.json`                 | **预定义**目标节点（pipeline_override 不会创建节点）                      |
-| 4   | Python 代码（**仅模式 A 必需**）                       | `context.get_node_data()` 读取 + 业务分支；模式 E 用 pure override 可绕过 |
+| # | 位置 | 内容 |
+|---|------|------|
+| 1 | `assets/interface.json` 的 `option` 字典 | 选项定义（type / cases / pipeline_override） |
+| 2 | `assets/interface.json` 对应 task 的 `option: []` 数组 | 注册到具体任务（否则 UI 上看不到） |
+| 3 | `assets/resource/base/pipeline/*.json` | **预定义**目标节点（pipeline_override 不会创建节点） |
+| 4 | Python 代码（**仅模式 A 必需**） | `context.get_node_data()` 读取 + 业务分支；模式 E 用 pure override 可绕过 |
 
 > ⚠️ **pipeline_override 只做属性合并，不会凭空创建节点。** 少了第 3 步，`context.get_node_data()` 会返回 `None`，运行时静默失败。
 
@@ -24,22 +24,22 @@ description: "Add runtime UI options (select/checkbox/switch/input) to interface
 
 ## 4 种 type 速查
 
-| type       | 选择        | override 字段         | 节点预定义形态                           |
-| ---------- | ----------- | --------------------- | ---------------------------------------- |
-| `select`   | 单选互斥    | `expected`            | `recognition: "OCR"` + `expected: [...]` |
-| `switch`   | 二元 Yes/No | `enabled`             | `{"enabled": bool}`                      |
-| `input`    | 自由文本    | `custom_action_param` | `action.param.custom_action_param`       |
-| `checkbox` | 多选        | `enabled`             | `{"enabled": false}`                     |
+| type | 选择 | override 字段 | 节点预定义形态 |
+|------|------|---------------|---------------|
+| `select` | 单选互斥 | `expected` | `recognition: "OCR"` + `expected: [...]` |
+| `switch` | 二元 Yes/No | `enabled` | `{"enabled": bool}` |
+| `input` | 自由文本 | `custom_action_param` | `action.param.custom_action_param` |
+| `checkbox` | 多选 | `enabled` | `{"enabled": false}` |
 
 ## 选哪个模式？
 
-| 你的需求                                               | 推荐模式                                     |
-| ------------------------------------------------------ | -------------------------------------------- |
-| 启用/禁用一个 Python 业务函数                          | **A**（switch + Flag 节点 + Python 读 flag） |
-| 从多个互斥选项里选一个值                               | **B**（select + OCR 节点）                   |
-| 同时启用多个独立的功能模块                             | **C**（checkbox + 多个 Flag 节点）           |
-| 用户输入自定义文本                                     | **D**（input + 占位符注入）                  |
-| 切换行为（点哪个按钮 / 走哪条 next 链）但不想改 Python | **E**（pure override 现有节点字段）          |
+| 你的需求 | 推荐模式 |
+|---------|---------|
+| 启用/禁用一个 Python 业务函数 | **A**（switch + Flag 节点 + Python 读 flag） |
+| 从多个互斥选项里选一个值 | **B**（select + OCR 节点） |
+| 同时启用多个独立的功能模块 | **C**（checkbox + 多个 Flag 节点） |
+| 用户输入自定义文本 | **D**（input + 占位符注入） |
+| 切换行为（点哪个按钮 / 走哪条 next 链）但不想改 Python | **E**（pure override 现有节点字段） |
 
 > **黄金法则**：能 pure override 解决就不加 Flag + Python 改动 —— 改动面越小越好维护。
 
@@ -251,34 +251,34 @@ value = data.get("recognition", {}).get("param", {}).get("expected", [""])[0]
 
 ### `next` 数组的单元素 vs 多元素语义
 
-| 写法                        | 语义                           | 何时用                                          |
-| --------------------------- | ------------------------------ | ----------------------------------------------- |
-| `["A"]`                     | **强约束**：只走 A             | 行为已确定，单路径足够（**模式 E 的典型形态**） |
-| `["A", "B"]`                | **回退链**：优先 A，A 失败走 B | 兜底机制（"优先点确认，找不到才点取消"）        |
-| `["A", "B", "[JumpBack]C"]` | 失败后跳回 C 节点重试          | 复杂回退                                        |
+| 写法 | 语义 | 何时用 |
+|------|------|-------|
+| `["A"]` | **强约束**：只走 A | 行为已确定，单路径足够（**模式 E 的典型形态**） |
+| `["A", "B"]` | **回退链**：优先 A，A 失败走 B | 兜底机制（"优先点确认，找不到才点取消"） |
+| `["A", "B", "[JumpBack]C"]` | 失败后跳回 C 节点重试 | 复杂回退 |
 
 ### 可被 override 的字段
 
-| 字段          | override 效果          | 典型用途                       |
-| ------------- | ---------------------- | ------------------------------ |
-| `next`        | 改变后续节点列表       | 切换行为路径（模式 E 主力）    |
-| `action`      | 改变点击/滑动/输入动作 | 切换操作类型                   |
-| `recognition` | 改变识别算法           | 切换识别方式（OCR ↔ Template） |
-| `expected`    | 改变识别期望值         | 配合 select 选值               |
-| `roi`         | 改变识别区域           | 适配不同界面尺寸               |
-| `timeout`     | 改变超时时间           | 适配不同网络/性能              |
+| 字段 | override 效果 | 典型用途 |
+|------|--------------|---------|
+| `next` | 改变后续节点列表 | 切换行为路径（模式 E 主力） |
+| `action` | 改变点击/滑动/输入动作 | 切换操作类型 |
+| `recognition` | 改变识别算法 | 切换识别方式（OCR ↔ Template） |
+| `expected` | 改变识别期望值 | 配合 select 选值 |
+| `roi` | 改变识别区域 | 适配不同界面尺寸 |
+| `timeout` | 改变超时时间 | 适配不同网络/性能 |
 
 > **关键认识**：上面这些字段都是普通 JSON 值，pipeline_override 一视同仁做深合并。**模式 A 用的 `enabled` 字段只是最常见的入口，不是唯一可 override 的字段。**
 
 ### 模式 A vs 模式 E 对比
 
-| 场景                               | 模式 A（Flag + Python） | 模式 E（pure override） |
-| ---------------------------------- | ----------------------- | ----------------------- |
-| 行为由 Python `if` 控制            | ✅ 必须                 | ❌ 绕远路               |
-| 行为由 pipeline 字段决定           | ❌ 多此一举             | ✅ 最简                 |
-| 需要运行时根据 flag 走不同代码分支 | ✅ 唯一选择             | ❌ 不行                 |
-| 改动 Python 代码                   | ✅ 需要                 | ❌ 不需要               |
-| 需要新加 Flag 节点                 | ✅ 需要                 | ❌ 不需要               |
+| 场景 | 模式 A（Flag + Python） | 模式 E（pure override） |
+|------|------------------------|----------------------|
+| 行为由 Python `if` 控制 | ✅ 必须 | ❌ 绕远路 |
+| 行为由 pipeline 字段决定 | ❌ 多此一举 | ✅ 最简 |
+| 需要运行时根据 flag 走不同代码分支 | ✅ 唯一选择 | ❌ 不行 |
+| 改动 Python 代码 | ✅ 需要 | ❌ 不需要 |
+| 需要新加 Flag 节点 | ✅ 需要 | ❌ 不需要 |
 
 ### 实战决策流程
 
@@ -304,18 +304,17 @@ value = data.get("recognition", {}).get("param", {}).get("expected", [""])[0]
 
 ### 状态机 vs Python orchestration 对比
 
-| 场景                           | 状态机（推荐）              | Python orchestration（次选） |
-| ------------------------------ | --------------------------- | ---------------------------- |
-| 有限页面状态推进（如活动流程） | ✅ 链 `next` + `[JumpBack]` | ❌ 自己写 `for/while` 调度   |
-| 按 flag 跳过整段函数           | ❌ 不适合                   | ✅ 读 flag + 早返回          |
-| 复杂的运行时分支逻辑           | ❌ 难表达                   | ✅ Python 灵活               |
+| 场景 | 状态机（推荐） | Python orchestration（次选） |
+|------|--------------|--------------------------|
+| 有限页面状态推进（如活动流程） | ✅ 链 `next` + `[JumpBack]` | ❌ 自己写 `for/while` 调度 |
+| 按 flag 跳过整段函数 | ❌ 不适合 | ✅ 读 flag + 早返回 |
+| 复杂的运行时分支逻辑 | ❌ 难表达 | ✅ Python 灵活 |
 
 ### 跨文件节点引用的测试陷阱
 
 MaaFramework 全局加载时，所有 `assets/resource/base/pipeline/*.json` 会合并到同一命名空间，所以 `[JumpBack]OtherFileNode` 能解析。但 `run_pipeline` 测试工具**只加载单文件**，跨文件引用会报"加载 Pipeline 失败"。
 
 **应对**：
-
 - 集成测试必须用 MaaFramework GUI / CLI 触发，不能依赖 `run_pipeline`
 - 单元测试每个节点用 `run_pipeline` 是 OK 的（无跨文件依赖）
 - 若某个流程有跨文件引用，本地调试时考虑用 `MaaCli` 跑全 bundle
@@ -325,7 +324,6 @@ MaaFramework 全局加载时，所有 `assets/resource/base/pipeline/*.json` 会
 ## 补充：状态机驱动的「流程型选项」
 
 如果一个 UI 选项代表的是**进入某个跨页面流程**（如"开启成长试炼"→ 大地图 → 难度选择 → 队伍 → 战斗），把选项的 `pipeline_override` 用于：
-
 1. 切换"是否启用流程"的 Flag 节点
 2. 注入该流程入口节点所需参数（如难度 `expected`）
 
@@ -384,31 +382,31 @@ MaaFramework 全局加载时，所有 `assets/resource/base/pipeline/*.json` 会
 
 ### 命名约定
 
-| 角色                  | 风格                  | 示例                                                      |
-| --------------------- | --------------------- | --------------------------------------------------------- |
-| option 名（用户可见） | 中文动词起头          | `开启5月城堡相亲`、`选择刷取任务国家`                     |
-| 节点名（pipeline）    | 英文                  | `Flag_EnableMarryTask`、`EnterCity`、`检测_科内塔之怒`    |
-| switch case 名        | **严格 `Yes` / `No`** | 不要用 `true/false` 或 `是/否`（Client 解析跨平台不一致） |
+| 角色 | 风格 | 示例 |
+|------|------|------|
+| option 名（用户可见） | 中文动词起头 | `开启5月城堡相亲`、`选择刷取任务国家` |
+| 节点名（pipeline） | 英文 | `Flag_EnableMarryTask`、`EnterCity`、`检测_科内塔之怒` |
+| switch case 名 | **严格 `Yes` / `No`** | 不要用 `true/false` 或 `是/否`（Client 解析跨平台不一致） |
 
 ### 默认值策略
 
 > **保持现有行为是底线。** 老用户不该因新选项而行为改变。
 
-| 场景                 | 推荐 default               |
-| -------------------- | -------------------------- |
+| 场景 | 推荐 default |
+|------|-------------|
 | 新开关让功能默认关闭 | `No`（明确告知用户"关了"） |
-| 新开关让功能默认开启 | `Yes`（保留旧行为）        |
-| 旧代码无条件开启     | `Yes`（兼容）              |
-| 旧代码无条件关闭     | `No`（兼容）               |
+| 新开关让功能默认开启 | `Yes`（保留旧行为） |
+| 旧代码无条件开启 | `Yes`（兼容） |
+| 旧代码无条件关闭 | `No`（兼容） |
 
 ---
 
 ## 读取位置
 
-| 决策类型         | 放哪读                                  | 理由                               |
-| ---------------- | --------------------------------------- | ---------------------------------- |
-| 是否执行某段流程 | 业务函数入口 `handle_xxx`               | 与现有同名函数风格一致，子函数自治 |
-| 用哪个值做主逻辑 | 任务入口 `run` 或 `YearlyTaskProcessor` | 一次读取、多次复用                 |
+| 决策类型 | 放哪读 | 理由 |
+|---------|-------|------|
+| 是否执行某段流程 | 业务函数入口 `handle_xxx` | 与现有同名函数风格一致，子函数自治 |
+| 用哪个值做主逻辑 | 任务入口 `run` 或 `YearlyTaskProcessor` | 一次读取、多次复用 |
 
 > **反例**：不要把"是否开启 X"的判断堆在通用 `dispatch` 函数（如 `handle_festival_by_month`）里。每加一个开关 dispatch 就多一个 `if-elif`，越来越臃肿。
 
@@ -468,12 +466,12 @@ def handle_sailing_festival(context):
 
 ### 4. 不要混淆字段路径
 
-| 用途                  | 字段路径                                              | 备注                                           |
-| --------------------- | ----------------------------------------------------- | ---------------------------------------------- |
-| `select`              | `data["recognition"]["param"]["expected"][0]`         | 节点必须 `recognition: "OCR"`                  |
-| `input`               | `data["action"]["param"]["custom_action_param"][key]` | 完全独立的机制                                 |
-| `switch` / `checkbox` | `data["enabled"]`                                     | 最简单                                         |
-| 模式 E 不读           | （不读，直接看 override 后节点的运行时行为）          | pure override 模式，Python 拿不到也不需要 flag |
+| 用途 | 字段路径 | 备注 |
+|------|---------|------|
+| `select` | `data["recognition"]["param"]["expected"][0]` | 节点必须 `recognition: "OCR"` |
+| `input` | `data["action"]["param"]["custom_action_param"][key]` | 完全独立的机制 |
+| `switch` / `checkbox` | `data["enabled"]` | 最简单 |
+| 模式 E 不读 | （不读，直接看 override 后节点的运行时行为） | pure override 模式，Python 拿不到也不需要 flag |
 
 ### 5. 不要用非 `Yes`/`No` 的 switch case 名
 
@@ -581,7 +579,6 @@ def enter_growth_trial(context):
 ```
 
 **自检问题**：
-
 - 我的 Python 代码里是否在**调 `run_task` 把控制权交给 pipeline**？是 → 考虑改用 `next` 链
 - 我的"流程推进"是否依赖**显式的状态变量**（如 `found`）？是 → 改用 `[JumpBack]` 让框架自动回退
 - 我的"流程"是否**可以画成状态机图**？是 → 用 JSON `next` 链
@@ -596,26 +593,26 @@ def enter_growth_trial(context):
 
 1. **JSON 语法检查**
 
-    ```bash
-    python -c "import json; json.load(open('assets/interface.json', encoding='utf-8'))"
-    python -c "import json; json.load(open('assets/resource/base/pipeline/auto_task.json', encoding='utf-8'))"
-    ```
+   ```bash
+   python -c "import json; json.load(open('assets/interface.json', encoding='utf-8'))"
+   python -c "import json; json.load(open('assets/resource/base/pipeline/auto_task.json', encoding='utf-8'))"
+   ```
 
 2. **资源加载检查**
 
-    ```bash
-    python check_resource.py ./assets/resource/base
-    ```
+   ```bash
+   python check_resource.py ./assets/resource/base
+   ```
 
-    期望输出 `All directories checked.`
+   期望输出 `All directories checked.`
 
 3. **Pipeline 节点测试**（可选）
 
-    ```python
-    data = context.get_node_data("Flag_EnableSailingFestivalPurchase")
-    assert data is not None, "节点未预定义"
-    assert "enabled" in data
-    ```
+   ```python
+   data = context.get_node_data("Flag_EnableSailingFestivalPurchase")
+   assert data is not None, "节点未预定义"
+   assert "enabled" in data
+   ```
 
 4. **端到端验证**：用 Pipeline Testing Skill 跑一次实际流程
 
